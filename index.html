@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SynthCore Ultimate — KI-Projekt-Builder für Python, Web-Apps & Discord-Bots</title>
+<title>SynthCore Ultimate — KI-Projekt-Builder für Python, Web-Apps &amp; Discord-Bots</title>
 <link rel="icon" type="image/png" href="1.png">
 <link rel="shortcut icon" href="1.png">
 <link rel="apple-touch-icon" href="1.png">
 
-<!-- ─── SEO ─── -->
+<!-- SEO -->
 <meta name="description" content="SynthCore Ultimate v3.5.0 — Der KI-Projekt-Builder für Python-Skripte, Web-Apps, REST-APIs und Discord-Bots. Vollautomatische Build-Pipelines, Live-Vorschau, kostenlos herunterladen.">
-<meta name="keywords" content="SynthCore, KI Projekt Builder, Python Generator, Discord Bot Builder, Web App Generator, REST API Generator, Maven Build, KI Code Generator, automatischer Code, Blockem13">
+<meta name="keywords" content="SynthCore, KI Projekt Builder, Python Generator, Discord Bot Builder, Web App Generator, REST API Generator, Maven Build, KI Code Generator, Blockem13">
 <meta name="author" content="Blockem13">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="language" content="de">
 <link rel="canonical" href="https://synthcore.dev/">
 
-<!-- ─── OpenGraph / Discord Embed ─── -->
+<!-- OpenGraph / Discord -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="SynthCore Ultimate">
 <meta property="og:title" content="SynthCore Ultimate v3.5.0 — Jetzt verfügbar!">
-<meta property="og:description" content="⚡ Der ultimative KI-Projekt-Builder. Python, Web-Apps, APIs & Discord-Bots in Sekunden. Kostenlos herunterladen!">
+<meta property="og:description" content="⚡ Der ultimative KI-Projekt-Builder. Python, Web-Apps, APIs &amp; Discord-Bots in Sekunden. Kostenlos herunterladen!">
 <meta property="og:url" content="https://synthcore.dev/">
 <meta property="og:image" content="https://synthcore.dev/og-image.svg">
 <meta property="og:image:type" content="image/svg+xml">
@@ -28,493 +28,658 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="SynthCore Ultimate v3.5.0 — KI-Projekt-Builder">
 <meta name="theme-color" content="#007acc">
-
-<!-- ─── Twitter / X Card ─── -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="SynthCore Ultimate v3.5.0 — Jetzt verfügbar!">
-<meta name="twitter:description" content="⚡ KI-Projekt-Builder für Python, Web-Apps, APIs & Discord-Bots. Kostenlos herunterladen!">
+<meta name="twitter:description" content="⚡ KI-Projekt-Builder für Python, Web-Apps, APIs &amp; Discord-Bots. Kostenlos herunterladen!">
 <meta name="twitter:image" content="https://synthcore.dev/og-image.svg">
-<meta name="twitter:image:alt" content="SynthCore Ultimate v3.5.0">
 
-<!-- ─── Structured Data (Google) ─── -->
+<!-- Structured Data -->
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "SynthCore Ultimate",
-  "operatingSystem": "Windows",
-  "applicationCategory": "DeveloperApplication",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "EUR"
-  },
-  "description": "KI-gestützter Projekt-Builder für Python-Skripte, Web-Apps, REST-APIs und Discord-Bots. Vollautomatische Build-Pipelines mit Live-Vorschau.",
-  "softwareVersion": "3.5.0",
-  "author": {
-    "@type": "Person",
-    "name": "Blockem13"
-  },
-  "url": "https://synthcore.dev/",
-  "downloadUrl": "https://synthcore.dev/version/SynthCore-3.5.0.exe",
-  "screenshot": "https://synthcore.dev/og-image.svg"
-}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SynthCore Ultimate","operatingSystem":"Windows","applicationCategory":"DeveloperApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"description":"KI-gestützter Projekt-Builder für Python, Web-Apps, REST-APIs und Discord-Bots.","softwareVersion":"3.5.0","author":{"@type":"Person","name":"Blockem13"},"url":"https://synthcore.dev/","downloadUrl":"https://synthcore.dev/version/SynthCore-3.5.0.exe","screenshot":"https://synthcore.dev/og-image.svg"}
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0&family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 :root {
-  --bg: #0c0c0e;
-  --surface: #141416;
-  --surface-2: #1a1a1e;
-  --border: rgba(255,255,255,0.07);
-  --border-strong: rgba(255,255,255,0.13);
-  --text: #f0f0f2;
-  --text-2: #8a8a96;
-  --text-3: #444450;
-  --accent: #007acc;
-  --accent-soft: rgba(0,122,204,0.12);
-  --accent-glow: rgba(0,122,204,0.35);
+  --bg: #080810;
+  --surface: #0f0f18;
+  --surface-2: #161622;
+  --surface-3: #1c1c2a;
+  --border: rgba(255,255,255,0.06);
+  --border-soft: rgba(255,255,255,0.04);
+  --border-strong: rgba(255,255,255,0.14);
+  --text: #eeeef2;
+  --text-2: #7878888;
+  --text-2: #8080a0;
+  --text-3: #3a3a52;
+  --accent: #4f8ef7;
+  --accent-2: #7c6af7;
+  --accent-soft: rgba(79,142,247,0.1);
+  --accent-glow: rgba(79,142,247,0.28);
+  --accent-glow-2: rgba(124,106,247,0.22);
   --discord: #5865F2;
   --discord-soft: rgba(88,101,242,0.12);
   --green: #22c55e;
   --yellow: #eab308;
   --red: #ef4444;
-  --radius: 12px;
-  --radius-lg: 18px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
   --font: 'Geist', -apple-system, sans-serif;
   --mono: 'Geist Mono', monospace;
 }
-* { margin:0; padding:0; box-sizing:border-box; }
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { scroll-behavior:smooth; }
-body { background:var(--bg); color:var(--text); font-family:var(--font); -webkit-font-smoothing:antialiased; overflow-x:hidden; line-height:1.6; }
+body {
+  background:var(--bg); color:var(--text); font-family:var(--font);
+  -webkit-font-smoothing:antialiased; overflow-x:hidden; line-height:1.6;
+}
 a { text-decoration:none; color:inherit; }
 button { border:none; background:none; cursor:pointer; font-family:inherit; }
-.material-symbols-rounded { font-family:'Material Symbols Rounded'; font-weight:normal; font-style:normal; display:inline-flex; vertical-align:middle; line-height:1; font-size:18px; }
+.material-symbols-rounded {
+  font-family:'Material Symbols Rounded'; font-weight:normal; font-style:normal;
+  display:inline-flex; vertical-align:middle; line-height:1; font-size:18px;
+}
 
-/* ─── Animations ─── */
-@keyframes fade-up   { from { opacity:0; transform:translateY(24px); } to { opacity:1; transform:translateY(0); } }
-@keyframes fade-in   { from { opacity:0; } to { opacity:1; } }
-@keyframes marquee   { 0% { transform:translateX(0); } 100% { transform:translateX(-50%); } }
-@keyframes pulse-dot { 0%,100% { opacity:1; } 50% { opacity:.4; } }
-@keyframes slide-in-right { from { opacity:0; transform:translateX(20px); } to { opacity:1; transform:translateX(0); } }
+/* ─── Keyframes ─── */
+@keyframes fade-up        { from{opacity:0;transform:translateY(32px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fade-in        { from{opacity:0} to{opacity:1} }
+@keyframes fade-in-scale  { from{opacity:0;transform:scale(.96)} to{opacity:1;transform:scale(1)} }
+@keyframes marquee        { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+@keyframes pulse-dot      { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.4;transform:scale(.85)} }
+@keyframes slide-right    { from{opacity:0;transform:translateX(24px)} to{opacity:1;transform:translateX(0)} }
+@keyframes float          { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-18px)} }
+@keyframes float-delay    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+@keyframes spin-slow      { to{transform:rotate(360deg)} }
+@keyframes gradient-move  { 0%{background-position:0% 50%} 50%{background-position:100% 50%} 100%{background-position:0% 50%} }
+@keyframes beam           { 0%{transform:translateX(-100%) rotate(45deg)} 100%{transform:translateX(300%) rotate(45deg)} }
+@keyframes count-up       { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+@keyframes border-glow    { 0%,100%{box-shadow:0 0 0 0 var(--accent-glow)} 50%{box-shadow:0 0 28px 4px var(--accent-glow)} }
 
 /* ─── Background ─── */
-.bg-noise {
-  position:fixed; inset:0; z-index:-1;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  background-repeat:repeat;
-  pointer-events:none;
-  opacity:0.6;
+.bg-grid {
+  position:fixed; inset:0; z-index:-3;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(ellipse 80% 80% at 50% 50%, black 30%, transparent 100%);
 }
-.bg-gradient {
-  position:fixed; inset:0; z-index:-2;
-  background: radial-gradient(ellipse 80% 60% at 10% 0%, rgba(0,90,160,0.12) 0%, transparent 60%),
-              radial-gradient(ellipse 50% 50% at 90% 100%, rgba(88,101,242,0.07) 0%, transparent 60%),
-              var(--bg);
+.bg-orb {
+  position:fixed; z-index:-2; border-radius:50%; filter:blur(90px); pointer-events:none;
+  animation:float 18s ease-in-out infinite;
+}
+.bg-orb-1 { width:700px; height:700px; top:-15%; left:-10%; background:radial-gradient(circle, rgba(79,142,247,0.12) 0%, transparent 65%); }
+.bg-orb-2 { width:500px; height:500px; bottom:-10%; right:-8%; background:radial-gradient(circle, rgba(124,106,247,0.1) 0%, transparent 65%); animation-delay:-9s; animation-duration:22s; }
+.bg-orb-3 { width:300px; height:300px; top:50%; left:50%; background:radial-gradient(circle, rgba(88,101,242,0.07) 0%, transparent 65%); animation-delay:-4s; animation-duration:15s; }
+.bg-noise {
+  position:fixed; inset:0; z-index:-1; pointer-events:none; opacity:.4;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
 }
 
-/* ─── Header ─── */
+/* ─── HEADER ─── */
 header {
-  position:fixed; top:0; left:0; width:100%; z-index:100;
-  height:64px; display:flex; align-items:center;
+  position:fixed; top:0; left:0; width:100%; z-index:200;
+  height:66px; display:flex; align-items:center;
   border-bottom:1px solid transparent;
-  transition: background .3s, border-color .3s, backdrop-filter .3s;
+  transition:all .4s cubic-bezier(.16,1,.3,1);
 }
 header.scrolled {
-  background:rgba(12,12,14,0.88);
-  backdrop-filter:blur(18px);
+  background:rgba(8,8,16,0.82);
+  backdrop-filter:blur(24px) saturate(180%);
   border-color:var(--border);
+  box-shadow:0 1px 0 var(--border-soft), 0 8px 32px rgba(0,0,0,.35);
 }
-.hdr { max-width:1280px; margin:0 auto; width:100%; padding:0 32px; display:flex; align-items:center; gap:32px; }
-.logo { display:flex; align-items:center; gap:10px; }
-.logo img { height:34px; width:auto; }
-.logo-name { font-size:16px; font-weight:700; letter-spacing:-.3px; }
-.logo-tag { font-size:11px; color:var(--text-2); font-weight:400; margin-left:2px; }
-nav { display:flex; gap:4px; margin-left:auto; }
+.hdr { max-width:1320px; margin:0 auto; width:100%; padding:0 36px; display:flex; align-items:center; gap:8px; }
+.logo { display:flex; align-items:center; gap:11px; margin-right:auto; }
+.logo-icon {
+  width:36px; height:36px; border-radius:10px;
+  background:linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  display:flex; align-items:center; justify-content:center;
+  font-size:13px; font-weight:900; color:#fff; letter-spacing:-.5px;
+  box-shadow:0 4px 16px var(--accent-glow);
+  flex-shrink:0;
+}
+.logo-icon img { width:24px; height:24px; object-fit:contain; }
+.logo-name { font-size:15px; font-weight:800; letter-spacing:-.4px; }
+.logo-tag {
+  font-size:9px; font-weight:700; text-transform:uppercase; letter-spacing:.8px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  margin-left:1px;
+}
+nav { display:flex; gap:2px; }
 nav a {
   font-size:13px; color:var(--text-2); font-weight:500;
-  padding:7px 13px; border-radius:8px;
+  padding:7px 14px; border-radius:9px;
   display:flex; align-items:center; gap:6px;
-  transition:background .2s, color .2s;
+  transition:all .2s; position:relative;
 }
 nav a .material-symbols-rounded { font-size:15px; }
-nav a:hover { background:var(--surface-2); color:var(--text); }
-.hdr-dl {
+nav a:hover { color:var(--text); background:rgba(255,255,255,0.05); }
+.hdr-cta {
   display:flex; align-items:center; gap:8px;
-  padding:8px 18px; border-radius:var(--radius);
-  background:var(--accent); color:#fff;
-  font-size:13px; font-weight:600;
-  transition:opacity .2s, transform .2s, box-shadow .2s;
-  box-shadow:0 0 20px var(--accent-glow);
+  padding:9px 20px; border-radius:var(--radius);
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff; font-size:13px; font-weight:700;
+  box-shadow:0 4px 22px var(--accent-glow);
+  transition:all .25s; position:relative; overflow:hidden; margin-left:8px;
 }
-.hdr-dl:hover { opacity:.9; transform:translateY(-1px); box-shadow:0 6px 28px var(--accent-glow); }
-.hdr-dl .material-symbols-rounded { font-size:16px; }
+.hdr-cta::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.18),transparent);
+  transform:translateX(-100%); transition:.5s;
+}
+.hdr-cta:hover::before { transform:translateX(100%); }
+.hdr-cta:hover { transform:translateY(-1px); box-shadow:0 8px 32px var(--accent-glow); }
+.hdr-cta .material-symbols-rounded { font-size:16px; }
 
-/* ─── Hero ─── */
+/* ─── HERO ─── */
 .hero {
-  padding:148px 32px 80px;
-  max-width:1280px; margin:0 auto;
-  text-align:center;
+  padding:160px 36px 90px;
+  max-width:1320px; margin:0 auto;
+  text-align:center; position:relative;
 }
 .hero-badge {
   display:inline-flex; align-items:center; gap:8px;
-  padding:5px 14px; border-radius:100px;
-  background:var(--surface-2); border:1px solid var(--border);
+  padding:6px 16px 6px 10px; border-radius:100px;
+  background:var(--surface-2); border:1px solid var(--border-strong);
   font-size:12px; color:var(--text-2); font-weight:500;
-  margin-bottom:28px;
-  animation: fade-in .6s both;
+  margin-bottom:32px; animation:fade-in .6s both;
+  backdrop-filter:blur(12px);
 }
-.hero-badge .dot { width:6px; height:6px; border-radius:50%; background:var(--green); animation:pulse-dot 2s infinite; flex-shrink:0; }
+.hero-badge .dot { width:7px; height:7px; border-radius:50%; background:var(--green); animation:pulse-dot 2.2s infinite; flex-shrink:0; box-shadow:0 0 8px var(--green); }
+.hero-badge strong { color:var(--text); font-weight:600; }
 .hero h1 {
-  font-size:62px; line-height:1.07; font-weight:800;
-  letter-spacing:-2.8px; margin-bottom:20px;
-  animation:fade-up .7s .05s both;
+  font-size:72px; line-height:1.04; font-weight:900;
+  letter-spacing:-3.5px; margin-bottom:24px;
+  animation:fade-up .75s .06s both;
 }
-.hero h1 em {
-  font-style:normal;
-  background:linear-gradient(90deg, #60a5fa 0%, #818cf8 50%, #a78bfa 100%);
+.hero h1 .line-1 { display:block; color:var(--text); }
+.hero h1 .line-2 {
+  display:block;
+  background:linear-gradient(95deg, #60a5fa 0%, #818cf8 40%, #c084fc 70%, #f472b6 100%);
+  background-size:200% auto;
   -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  animation:fade-up .75s .06s both, gradient-move 4s linear infinite;
 }
 .hero-sub {
-  font-size:17px; color:var(--text-2); max-width:500px;
-  margin:0 auto 40px; line-height:1.7; font-weight:400;
-  animation:fade-up .7s .12s both;
+  font-size:18px; color:var(--text-2); max-width:520px;
+  margin:0 auto 44px; line-height:1.75; font-weight:400;
+  animation:fade-up .75s .14s both;
 }
-.hero-actions { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; animation:fade-up .7s .2s both; margin-bottom:60px; }
+.hero-actions {
+  display:flex; justify-content:center; gap:14px; flex-wrap:wrap;
+  animation:fade-up .75s .22s both; margin-bottom:24px;
+}
 .btn {
-  display:inline-flex; align-items:center; gap:8px;
-  padding:12px 24px; border-radius:var(--radius);
-  font-size:14px; font-weight:600; font-family:var(--font);
-  transition:all .2s; border:1px solid transparent; letter-spacing:-.1px;
+  display:inline-flex; align-items:center; gap:9px;
+  padding:13px 26px; border-radius:var(--radius);
+  font-size:14px; font-weight:700; font-family:var(--font);
+  transition:all .25s cubic-bezier(.16,1,.3,1);
+  border:1px solid transparent; letter-spacing:-.1px;
+  position:relative; overflow:hidden;
 }
-.btn .material-symbols-rounded { font-size:17px; }
-.btn-primary { background:var(--accent); color:#fff; box-shadow:0 0 22px var(--accent-glow); }
-.btn-primary:hover { opacity:.9; transform:translateY(-2px); box-shadow:0 8px 30px var(--accent-glow); }
-.btn-ghost { background:var(--surface-2); color:var(--text); border-color:var(--border); }
-.btn-ghost:hover { border-color:var(--border-strong); background:rgba(255,255,255,0.05); }
+.btn .material-symbols-rounded { font-size:18px; }
+.btn-primary {
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff; box-shadow:0 4px 24px var(--accent-glow), 0 1px 0 rgba(255,255,255,.1) inset;
+}
+.btn-primary::before {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);
+  transform:translateX(-100%); transition:.55s;
+}
+.btn-primary:hover::before { transform:translateX(100%); }
+.btn-primary:hover { transform:translateY(-3px); box-shadow:0 10px 36px var(--accent-glow); }
+.btn-ghost {
+  background:var(--surface-2); color:var(--text);
+  border-color:var(--border-strong);
+}
+.btn-ghost:hover { background:var(--surface-3); border-color:rgba(255,255,255,.22); transform:translateY(-2px); }
+.hero-meta {
+  display:flex; align-items:center; justify-content:center; gap:24px;
+  font-size:12px; color:var(--text-3); animation:fade-up .75s .3s both; margin-bottom:64px;
+}
+.hero-meta span { display:flex; align-items:center; gap:5px; }
+.hero-meta .material-symbols-rounded { font-size:14px; color:var(--text-3); }
 
-/* ─── Marquee ─── */
+/* ─── MARQUEE ─── */
 .marquee-wrap {
   overflow:hidden; position:relative;
-  border-top:1px solid var(--border);
-  border-bottom:1px solid var(--border);
-  padding:16px 0;
-  animation:fade-in .7s .25s both;
+  border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+  padding:14px 0; animation:fade-in .75s .32s both;
+  background:linear-gradient(90deg, transparent, rgba(79,142,247,0.02), transparent);
 }
 .marquee-wrap::before, .marquee-wrap::after {
-  content:''; position:absolute; top:0; height:100%; width:120px; z-index:2;
+  content:''; position:absolute; top:0; height:100%; width:140px; z-index:2;
 }
 .marquee-wrap::before { left:0; background:linear-gradient(90deg, var(--bg), transparent); }
 .marquee-wrap::after  { right:0; background:linear-gradient(-90deg, var(--bg), transparent); }
-.marquee-track { display:flex; gap:0; width:max-content; animation:marquee 30s linear infinite; }
+.marquee-track { display:flex; width:max-content; animation:marquee 28s linear infinite; }
 .marquee-item {
-  display:flex; align-items:center; gap:9px;
-  padding:0 28px; white-space:nowrap;
-  font-size:13px; font-weight:500; color:var(--text-3);
-  transition:color .2s;
+  display:flex; align-items:center; gap:8px;
+  padding:0 26px; white-space:nowrap;
+  font-size:12px; font-weight:600; color:var(--text-3);
+  letter-spacing:.2px; text-transform:uppercase;
 }
-.marquee-item .material-symbols-rounded { font-size:17px; color:var(--text-3); }
+.marquee-item .material-symbols-rounded { font-size:15px; color:var(--text-3); }
+.marquee-sep { width:3px; height:3px; border-radius:50%; background:var(--border-strong); align-self:center; flex-shrink:0; }
 
-/* ─── Preview window ─── */
-.preview-container { animation:fade-up .8s .28s both; }
+/* ─── PREVIEW ─── */
+.preview-container { animation:fade-in-scale .9s .36s both; margin-top:56px; }
+.preview-shell {
+  max-width:1100px; margin:0 auto; position:relative;
+}
+.preview-shell::before {
+  content:''; position:absolute; inset:-2px;
+  background:linear-gradient(135deg,rgba(79,142,247,.3),rgba(124,106,247,.2),rgba(88,101,242,.3));
+  border-radius:calc(var(--radius-xl) + 2px); filter:blur(20px); opacity:.7; z-index:-1;
+}
 .preview-window {
-  max-width:1100px; margin:0 auto;
-  border:1px solid var(--border); border-radius:var(--radius-lg);
+  border:1px solid rgba(255,255,255,0.09); border-radius:var(--radius-xl);
   overflow:hidden; background:var(--surface);
-  box-shadow:0 32px 80px rgba(0,0,0,.5), 0 0 0 1px rgba(255,255,255,.03);
+  box-shadow:0 40px 100px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.04);
+  position:relative;
 }
 .preview-bar {
-  height:40px; background:var(--surface-2);
+  height:44px; background:var(--surface-2);
   border-bottom:1px solid var(--border);
-  display:flex; align-items:center; padding:0 14px; gap:8px;
+  display:flex; align-items:center; padding:0 16px; gap:10px;
 }
-.traffic { display:flex; gap:6px; }
-.tl { width:11px; height:11px; border-radius:50%; }
-.tl-r { background:#ff5f57; }
-.tl-y { background:#febc2e; }
-.tl-g { background:#28c840; }
-.preview-bar-title { font-family:var(--mono); font-size:11px; color:var(--text-3); margin:0 auto; }
-.preview-iframe { display:block; width:100%; height:580px; border:none; background:#0a0a0c; }
-
-/* ─── Sections ─── */
-.section { max-width:1100px; margin:0 auto; padding:100px 32px; }
-.section-label {
-  font-size:11px; font-weight:600; text-transform:uppercase;
-  letter-spacing:1.2px; color:var(--accent); margin-bottom:12px;
+.traffic { display:flex; gap:7px; }
+.tl { width:12px; height:12px; border-radius:50%; }
+.tl-r { background:#ff5f57; } .tl-y { background:#febc2e; } .tl-g { background:#28c840; }
+.preview-bar-addr {
+  flex:1; display:flex; align-items:center; justify-content:center;
+}
+.preview-bar-pill {
+  background:var(--surface-3); border:1px solid var(--border);
+  border-radius:7px; padding:4px 14px;
+  font-family:var(--mono); font-size:11px; color:var(--text-3);
   display:flex; align-items:center; gap:7px;
 }
-.section-label .material-symbols-rounded { font-size:14px; }
-.section-title { font-size:38px; font-weight:800; letter-spacing:-1.5px; margin-bottom:14px; line-height:1.1; }
-.section-sub { font-size:15px; color:var(--text-2); max-width:480px; line-height:1.7; }
+.preview-bar-pill .material-symbols-rounded { font-size:12px; color:var(--green); }
+.preview-iframe { display:block; width:100%; height:580px; border:none; background:#070710; }
 
-/* ─── Features ─── */
-.features { display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:var(--radius-lg); overflow:hidden; margin-top:56px; }
+/* ─── STATS ─── */
+.stats-row {
+  display:grid; grid-template-columns:repeat(3,1fr); gap:1px;
+  background:var(--border); border:1px solid var(--border);
+  border-radius:var(--radius-lg); overflow:hidden; margin-top:80px;
+}
+.stat {
+  background:var(--bg); padding:36px 28px; text-align:center;
+  transition:background .3s; position:relative; overflow:hidden;
+}
+.stat::after {
+  content:''; position:absolute; bottom:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,transparent,var(--accent),var(--accent-2),transparent);
+  opacity:0; transition:opacity .3s;
+}
+.stat:hover { background:var(--surface); }
+.stat:hover::after { opacity:1; }
+.stat-num {
+  font-size:44px; font-weight:900; letter-spacing:-2px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  line-height:1; margin-bottom:8px;
+}
+.stat-label { font-size:13px; color:var(--text-2); font-weight:500; }
+
+/* ─── SECTIONS ─── */
+.section { max-width:1100px; margin:0 auto; padding:110px 36px; }
+.section-eyebrow {
+  display:inline-flex; align-items:center; gap:7px;
+  font-size:11px; font-weight:700; text-transform:uppercase;
+  letter-spacing:1.4px; color:var(--accent); margin-bottom:14px;
+}
+.section-eyebrow .material-symbols-rounded { font-size:13px; }
+.section-h {
+  font-size:42px; font-weight:900; letter-spacing:-2px;
+  line-height:1.07; margin-bottom:16px;
+}
+.section-h em {
+  font-style:normal;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+.section-p { font-size:15px; color:var(--text-2); max-width:460px; line-height:1.75; }
+
+/* ─── FEATURES GRID ─── */
+.feat-grid {
+  display:grid; grid-template-columns:repeat(2,1fr);
+  gap:1px; background:var(--border);
+  border:1px solid var(--border); border-radius:var(--radius-lg);
+  overflow:hidden; margin-top:60px;
+}
 .feat {
-  background:var(--bg); padding:36px 32px;
-  transition:background .25s;
+  background:var(--bg); padding:40px 36px;
+  transition:background .3s, transform .2s;
   position:relative; overflow:hidden;
 }
-.feat::after { content:''; position:absolute; top:0; left:0; right:0; height:1px; background:linear-gradient(90deg, transparent, var(--accent), transparent); opacity:0; transition:opacity .3s; }
+.feat-shine {
+  position:absolute; top:-50%; left:-30%; width:60%; height:200%;
+  background:linear-gradient(90deg, transparent, rgba(255,255,255,0.025), transparent);
+  transform:rotate(15deg) translateX(-100%);
+  transition:transform .65s;
+  pointer-events:none;
+}
+.feat:hover .feat-shine { transform:rotate(15deg) translateX(280%); }
+.feat-glow {
+  position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,var(--accent),var(--accent-2),transparent);
+  opacity:0; transition:opacity .35s;
+}
 .feat:hover { background:var(--surface); }
-.feat:hover::after { opacity:1; }
+.feat:hover .feat-glow { opacity:1; }
 .feat-icon {
-  width:44px; height:44px; border-radius:10px;
-  background:var(--accent-soft); border:1px solid rgba(0,122,204,0.2);
+  width:48px; height:48px; border-radius:12px;
+  background:var(--accent-soft); border:1px solid rgba(79,142,247,0.25);
   display:flex; align-items:center; justify-content:center;
-  color:var(--accent); margin-bottom:18px;
-  transition:transform .2s;
+  color:var(--accent); margin-bottom:20px; transition:all .3s;
 }
-.feat:hover .feat-icon { transform:scale(1.08); }
-.feat-icon .material-symbols-rounded { font-size:22px; }
-.feat-title { font-size:17px; font-weight:700; margin-bottom:9px; letter-spacing:-.3px; }
-.feat-desc { font-size:14px; color:var(--text-2); line-height:1.65; }
-.feat-pill {
+.feat:hover .feat-icon {
+  background:linear-gradient(135deg,var(--accent-soft),rgba(124,106,247,.12));
+  border-color:rgba(124,106,247,.3); transform:scale(1.1) rotate(-3deg);
+  box-shadow:0 6px 20px var(--accent-glow);
+}
+.feat-icon .material-symbols-rounded { font-size:24px; }
+.feat-title { font-size:18px; font-weight:800; margin-bottom:10px; letter-spacing:-.4px; }
+.feat-desc { font-size:14px; color:var(--text-2); line-height:1.7; }
+.feat-tag {
   display:inline-flex; align-items:center; gap:5px;
-  margin-top:16px; padding:4px 10px;
-  background:var(--surface-2); border:1px solid var(--border);
-  border-radius:6px; font-size:11px; font-weight:600; color:var(--text-2);
-  letter-spacing:.3px;
+  margin-top:18px; padding:4px 11px;
+  background:var(--surface-2); border:1px solid var(--border-strong);
+  border-radius:6px; font-size:10px; font-weight:700; color:var(--text-2);
+  letter-spacing:.4px; text-transform:uppercase;
 }
-.feat-pill .material-symbols-rounded { font-size:13px; }
+.feat-tag .material-symbols-rounded { font-size:12px; }
 
-/* ─── Archive ─── */
+/* ─── HOW IT WORKS ─── */
+.steps { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:60px; }
+.step {
+  background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--radius-lg); padding:32px 28px;
+  position:relative; overflow:hidden;
+  transition:all .3s cubic-bezier(.16,1,.3,1);
+}
+.step:hover { border-color:var(--border-strong); transform:translateY(-4px); box-shadow:0 20px 50px rgba(0,0,0,.4); }
+.step-num {
+  font-size:56px; font-weight:900; letter-spacing:-3px;
+  background:linear-gradient(135deg,rgba(79,142,247,.15),rgba(124,106,247,.08));
+  -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+  line-height:1; margin-bottom:16px; font-family:var(--mono);
+}
+.step-title { font-size:17px; font-weight:700; margin-bottom:8px; letter-spacing:-.3px; }
+.step-desc { font-size:13px; color:var(--text-2); line-height:1.65; }
+.step-arrow {
+  position:absolute; top:50%; right:-13px; transform:translateY(-50%);
+  width:26px; height:26px; border-radius:50%;
+  background:var(--surface-3); border:1px solid var(--border-strong);
+  display:flex; align-items:center; justify-content:center;
+  z-index:2; color:var(--text-3); font-size:13px;
+}
+.step:last-child .step-arrow { display:none; }
+
+/* ─── ARCHIVE ─── */
 .archive-box {
   background:var(--surface); border:1px solid var(--border);
-  border-radius:var(--radius-lg); overflow:hidden; margin-top:56px;
+  border-radius:var(--radius-lg); overflow:hidden; margin-top:60px;
 }
 .archive-thead {
-  display:grid; grid-template-columns:2fr .7fr .8fr .6fr 72px;
-  padding:14px 24px; background:var(--surface-2);
+  display:grid; grid-template-columns:2fr .65fr .75fr .55fr 64px;
+  padding:14px 28px; background:var(--surface-2);
   border-bottom:1px solid var(--border);
-  font-size:11px; font-weight:600; color:var(--text-3);
-  text-transform:uppercase; letter-spacing:.8px;
+  font-size:10px; font-weight:700; color:var(--text-3);
+  text-transform:uppercase; letter-spacing:1px;
 }
 .a-item {
-  display:grid; grid-template-columns:2fr .7fr .8fr .6fr 72px;
-  padding:20px 24px; align-items:center;
-  border-bottom:1px solid var(--border);
-  transition:background .2s;
-  opacity:0;
+  display:grid; grid-template-columns:2fr .65fr .75fr .55fr 64px;
+  padding:22px 28px; align-items:center;
+  border-bottom:1px solid var(--border-soft);
+  transition:background .2s; opacity:0;
+  position:relative; overflow:hidden;
 }
 .a-item:last-child { border-bottom:none; }
-.a-item:hover { background:var(--surface-2); }
+.a-item::before {
+  content:''; position:absolute; left:0; top:0; bottom:0; width:2px;
+  background:linear-gradient(180deg,var(--accent),var(--accent-2));
+  transform:scaleY(0); transition:transform .25s;
+  transform-origin:bottom;
+}
+.a-item:hover { background:rgba(79,142,247,0.04); }
+.a-item:hover::before { transform:scaleY(1); }
 .a-item:hover .dl-btn { opacity:1; transform:none; }
-.a-ver { font-size:15px; font-weight:700; font-family:var(--mono); display:flex; align-items:center; gap:7px; margin-bottom:5px; color:var(--text); }
+.a-ver {
+  font-size:14px; font-weight:700; font-family:var(--mono);
+  display:flex; align-items:center; gap:8px; margin-bottom:5px; color:var(--text);
+}
 .a-ver .material-symbols-rounded { font-size:14px; color:var(--accent); }
 .a-changes { font-size:12px; color:var(--text-2); line-height:1.5; max-width:380px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
 .badge {
-  display:inline-flex; align-items:center; gap:4px; margin-top:8px;
-  padding:3px 9px; border-radius:5px; font-size:10px; font-weight:700;
-  text-transform:uppercase; letter-spacing:.5px;
+  display:inline-flex; align-items:center; gap:4px; margin-top:9px;
+  padding:3px 9px; border-radius:5px; font-size:9px; font-weight:800;
+  text-transform:uppercase; letter-spacing:.6px;
 }
-.badge-stable { background:rgba(34,197,94,.1); color:var(--green); border:1px solid rgba(34,197,94,.2); }
-.badge-beta   { background:rgba(234,179,8,.1);  color:var(--yellow); border:1px solid rgba(234,179,8,.2); }
-.badge-alpha  { background:rgba(239,68,68,.1);  color:var(--red);    border:1px solid rgba(239,68,68,.2); }
-.badge-legacy { background:rgba(100,100,110,.1);color:var(--text-3); border:1px solid rgba(100,100,110,.2); }
+.badge-stable { background:rgba(34,197,94,.08); color:var(--green); border:1px solid rgba(34,197,94,.2); }
+.badge-beta   { background:rgba(234,179,8,.08);  color:var(--yellow); border:1px solid rgba(234,179,8,.2); }
+.badge-alpha  { background:rgba(239,68,68,.08);  color:var(--red);    border:1px solid rgba(239,68,68,.2); }
+.badge-legacy { background:rgba(80,80,100,.08); color:var(--text-3);  border:1px solid rgba(80,80,100,.2); }
 .a-date, .a-size { font-family:var(--mono); font-size:12px; color:var(--text-2); }
 .dl-btn {
-  width:36px; height:36px; border-radius:9px;
-  background:var(--accent-soft); border:1px solid rgba(0,122,204,.25);
+  width:38px; height:38px; border-radius:10px;
+  background:var(--accent-soft); border:1px solid rgba(79,142,247,.25);
   display:flex; align-items:center; justify-content:center;
-  color:var(--accent); opacity:0;
-  transform:translateX(8px);
-  transition:all .25s;
+  color:var(--accent); opacity:0; transform:translateX(8px);
+  transition:all .25s cubic-bezier(.16,1,.3,1);
 }
 .dl-btn .material-symbols-rounded { font-size:17px; }
-.dl-btn:hover { background:var(--accent); color:#fff; border-color:transparent; box-shadow:0 0 20px var(--accent-glow); }
+.dl-btn:hover { background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; border-color:transparent; box-shadow:0 4px 20px var(--accent-glow); transform:scale(1.08); }
 
-/* ─── Discord section ─── */
-.discord-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center; }
-.discord-label { font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:1.2px; color:var(--discord); display:flex; align-items:center; gap:7px; margin-bottom:12px; }
-.discord-label .material-symbols-rounded { font-size:14px; }
-.discord-title { font-size:34px; font-weight:800; letter-spacing:-1.5px; margin-bottom:14px; line-height:1.15; }
-.discord-sub { font-size:14px; color:var(--text-2); line-height:1.75; margin-bottom:28px; }
-.discord-feats { display:flex; flex-direction:column; gap:10px; margin-bottom:32px; }
-.discord-feat { display:flex; align-items:center; gap:10px; font-size:13px; color:var(--text-2); }
-.discord-feat .material-symbols-rounded { font-size:15px; color:var(--discord); }
-.btn-dc { background:var(--discord); color:#fff; box-shadow:0 0 20px rgba(88,101,242,.3); }
-.btn-dc:hover { opacity:.9; transform:translateY(-2px); box-shadow:0 8px 28px rgba(88,101,242,.4); }
+/* ─── DISCORD SECTION ─── */
+.discord-wrap {
+  background:linear-gradient(135deg, rgba(88,101,242,.06) 0%, rgba(79,142,247,.04) 100%);
+  border:1px solid rgba(88,101,242,.15); border-radius:var(--radius-xl);
+  overflow:hidden; position:relative;
+}
+.discord-wrap::before {
+  content:''; position:absolute; top:0; left:0; right:0; height:1px;
+  background:linear-gradient(90deg,transparent,rgba(88,101,242,.5),var(--accent),transparent);
+}
+.discord-grid { display:grid; grid-template-columns:1fr 1fr; gap:72px; align-items:center; padding:64px; }
+.discord-eyebrow { display:flex; align-items:center; gap:7px; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1.4px; color:var(--discord); margin-bottom:14px; }
+.discord-eyebrow .material-symbols-rounded { font-size:13px; }
+.discord-h { font-size:36px; font-weight:900; letter-spacing:-1.8px; margin-bottom:14px; line-height:1.1; }
+.discord-p { font-size:14px; color:var(--text-2); line-height:1.8; margin-bottom:28px; }
+.discord-checks { display:flex; flex-direction:column; gap:11px; margin-bottom:34px; }
+.discord-check { display:flex; align-items:center; gap:11px; font-size:13px; color:var(--text-2); }
+.discord-check .material-symbols-rounded { font-size:16px; color:var(--discord); flex-shrink:0; }
+.btn-dc {
+  background:var(--discord); color:#fff;
+  box-shadow:0 4px 22px rgba(88,101,242,.35);
+}
+.btn-dc:hover { opacity:.92; transform:translateY(-3px); box-shadow:0 10px 32px rgba(88,101,242,.45); }
 
-/* Discord embed mock */
+/* Discord mock */
 .dc-mock {
-  background:#313338; border-radius:14px; overflow:hidden;
-  box-shadow:0 24px 60px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.04);
+  background:#313338; border-radius:16px; overflow:hidden;
+  box-shadow:0 32px 80px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.05);
 }
-.dc-mock-head {
-  background:#2b2d31; padding:10px 16px;
-  display:flex; align-items:center; gap:8px;
-  border-bottom:1px solid rgba(0,0,0,.25);
-  font-size:13px; font-weight:600; color:#f2f3f5;
-}
-.dc-hash { color:#80848e; font-size:17px; font-weight:700; }
-.dc-body { padding:16px; }
-.dc-msg { display:flex; gap:12px; }
-.dc-av { width:36px; height:36px; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:13px; color:#fff; }
+.dc-mock-head { background:#2b2d31; padding:11px 18px; display:flex; align-items:center; gap:9px; border-bottom:1px solid rgba(0,0,0,.3); font-size:13px; font-weight:700; color:#f2f3f5; }
+.dc-hash { color:#80848e; font-size:18px; font-weight:800; }
+.dc-body { padding:18px; }
+.dc-msg { display:flex; gap:13px; }
+.dc-av { width:38px; height:38px; border-radius:50%; flex-shrink:0; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:13px; color:#fff; }
 .dc-av-user { background:linear-gradient(135deg,#3b82f6,#7c3aed); }
 .dc-av-bot  { background:var(--discord); }
-.dc-msg-right { flex:1; }
-.dc-msg-top { display:flex; align-items:baseline; gap:8px; margin-bottom:4px; }
-.dc-name { font-size:14px; font-weight:600; color:#f2f3f5; }
-.dc-bot-tag { font-size:9px; font-weight:700; background:var(--discord); color:#fff; padding:1px 5px; border-radius:4px; text-transform:uppercase; }
+.dc-msg-right { flex:1; min-width:0; }
+.dc-msg-top { display:flex; align-items:baseline; gap:8px; margin-bottom:4px; flex-wrap:wrap; }
+.dc-name { font-size:14px; font-weight:700; color:#f2f3f5; }
+.dc-bot-tag { font-size:9px; font-weight:800; background:var(--discord); color:#fff; padding:1px 5px; border-radius:4px; text-transform:uppercase; letter-spacing:.3px; }
 .dc-ts { font-size:11px; color:#80848e; }
-.dc-text { font-size:13px; color:#dbdee1; line-height:1.5; margin-bottom:8px; }
-.dc-link { color:#00a8fc; font-size:13px; margin-bottom:8px; display:block; }
-.dc-embed {
-  background:#2b2d31; border-left:4px solid var(--accent);
-  border-radius:4px; padding:12px 14px 14px;
-  position:relative; max-width:440px;
-}
-.dc-embed-author { display:flex; align-items:center; gap:7px; margin-bottom:6px; }
-.dc-embed-av { width:18px; height:18px; background:var(--accent); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:9px; font-weight:800; color:#fff; }
+.dc-text { font-size:13px; color:#dbdee1; line-height:1.5; margin-bottom:9px; }
+.dc-link { color:#00a8fc; font-size:13px; margin-bottom:9px; display:block; word-break:break-all; }
+.dc-embed { background:#2b2d31; border-left:4px solid var(--accent); border-radius:4px; padding:13px 14px 15px; position:relative; max-width:440px; }
+.dc-embed-author { display:flex; align-items:center; gap:7px; margin-bottom:7px; }
+.dc-embed-av { width:18px; height:18px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:9px; font-weight:900; color:#fff; }
 .dc-embed-aname { font-size:12px; color:#b9bbbe; font-weight:500; }
-.dc-embed-title { font-size:14px; font-weight:700; color:#00a8fc; margin-bottom:7px; line-height:1.3; }
-.dc-embed-desc { font-size:13px; color:#dbdee1; line-height:1.5; margin-bottom:12px; }
-.dc-embed-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:10px; }
-.dc-field-name { font-size:11px; font-weight:700; color:#b9bbbe; margin-bottom:2px; }
+.dc-embed-title { font-size:14px; font-weight:700; color:#00a8fc; margin-bottom:8px; line-height:1.35; padding-right:70px; }
+.dc-embed-desc { font-size:13px; color:#dbdee1; line-height:1.55; margin-bottom:13px; }
+.dc-embed-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:11px; }
+.dc-field-name { font-size:10px; font-weight:800; color:#b9bbbe; margin-bottom:2px; text-transform:uppercase; letter-spacing:.4px; }
 .dc-field-val { font-size:12px; color:#dbdee1; }
-.dc-field-val.green { color:#57f287; }
-.dc-field-val.blue  { color:#5865f2; }
-.dc-field-val.gold  { color:#fee75c; }
-.dc-embed-thumb { position:absolute; top:12px; right:12px; width:62px; height:62px; background:linear-gradient(135deg,#007acc,#5865f2); border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:17px; color:#fff; }
-.dc-embed-footer { display:flex; align-items:center; gap:6px; padding-top:8px; border-top:1px solid rgba(255,255,255,.05); }
-.dc-embed-footer-dot { width:13px; height:13px; background:var(--accent); border-radius:50%; }
+.dc-field-val.green { color:#57f287; } .dc-field-val.blue { color:#5865f2; } .dc-field-val.gold { color:#fee75c; }
+.dc-embed-thumb { position:absolute; top:13px; right:13px; width:60px; height:60px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); border-radius:8px; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:16px; color:#fff; }
+.dc-embed-footer { display:flex; align-items:center; gap:7px; padding-top:9px; border-top:1px solid rgba(255,255,255,.06); }
+.dc-embed-footer-dot { width:14px; height:14px; background:linear-gradient(135deg,var(--accent),var(--accent-2)); border-radius:50%; flex-shrink:0; }
 .dc-embed-footer-text { font-size:11px; color:#80848e; }
-.dc-bot-msg { display:flex; gap:12px; margin-top:14px; }
+.dc-bot-msg { display:flex; gap:13px; margin-top:15px; }
 
-/* ─── Footer ─── */
-footer {
-  border-top:1px solid var(--border);
-  padding:60px 32px 40px;
-  margin-top:40px;
-}
+/* ─── FOOTER ─── */
+footer { border-top:1px solid var(--border); padding:70px 36px 44px; margin-top:60px; }
 .footer-inner { max-width:1100px; margin:0 auto; }
-.footer-grid { display:grid; grid-template-columns:1.8fr 1fr 1fr 1fr; gap:56px; margin-bottom:48px; }
-.footer-logo { display:flex; align-items:center; gap:10px; margin-bottom:14px; }
-.footer-logo img { height:30px; }
-.footer-logo-name { font-size:15px; font-weight:700; }
-.footer-desc { font-size:13px; color:var(--text-2); line-height:1.7; max-width:240px; margin-bottom:20px; }
+.footer-top { display:grid; grid-template-columns:1.9fr 1fr 1fr 1fr; gap:60px; margin-bottom:52px; }
+.footer-brand {}
+.footer-logo-row { display:flex; align-items:center; gap:10px; margin-bottom:16px; }
+.footer-logo-icon {
+  width:32px; height:32px; border-radius:8px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:flex; align-items:center; justify-content:center;
+  font-size:12px; font-weight:900; color:#fff; flex-shrink:0;
+}
+.footer-logo-icon img { width:22px; height:22px; object-fit:contain; }
+.footer-logo-name { font-size:15px; font-weight:800; }
+.footer-desc { font-size:13px; color:var(--text-2); line-height:1.75; max-width:230px; margin-bottom:22px; }
+.footer-social-row { display:flex; gap:8px; }
+.fsoc {
+  width:34px; height:34px; border-radius:9px;
+  background:var(--surface-2); border:1px solid var(--border);
+  display:flex; align-items:center; justify-content:center;
+  font-size:10px; font-weight:800; color:var(--text-2);
+  transition:all .2s; letter-spacing:-.2px;
+}
+.fsoc:hover { border-color:var(--border-strong); color:var(--text); transform:translateY(-3px); background:var(--surface-3); }
+.footer-col h5 { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--text-2); margin-bottom:18px; }
+.footer-col ul { display:flex; flex-direction:column; gap:10px; }
+.footer-col ul li a { font-size:13px; color:var(--text-2); transition:color .2s; display:flex; align-items:center; gap:6px; }
+.footer-col ul li a:hover { color:var(--text); }
+.footer-col ul li a .material-symbols-rounded { font-size:14px; opacity:.5; }
+.footer-bottom {
+  display:flex; align-items:center; justify-content:space-between;
+  padding-top:28px; border-top:1px solid var(--border);
+  font-size:12px; color:var(--text-3);
+}
+.footer-bottom strong { color:var(--text-2); font-weight:600; }
 .footer-dc-btn {
   display:inline-flex; align-items:center; gap:8px;
-  padding:9px 16px; border-radius:var(--radius);
+  padding:8px 15px; border-radius:var(--radius);
   background:var(--discord-soft); border:1px solid rgba(88,101,242,.2);
-  font-size:12px; font-weight:600; color:#7289da;
-  transition:all .2s;
+  font-size:12px; font-weight:600; color:#7289da; transition:all .2s;
 }
 .footer-dc-btn:hover { background:rgba(88,101,242,.2); transform:translateY(-1px); }
 .footer-dc-btn .material-symbols-rounded { font-size:15px; }
-.footer-col h5 { font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:.8px; color:var(--text-2); margin-bottom:16px; }
-.footer-col ul { display:flex; flex-direction:column; gap:9px; }
-.footer-col ul li a { font-size:13px; color:var(--text-2); transition:color .2s; }
-.footer-col ul li a:hover { color:var(--text); }
-.footer-bottom { display:flex; align-items:center; justify-content:space-between; padding-top:28px; border-top:1px solid var(--border); }
-.footer-copy { font-size:12px; color:var(--text-3); }
-.footer-copy strong { color:var(--text-2); font-weight:600; }
-.footer-socials { display:flex; gap:8px; }
-.soc {
-  width:34px; height:34px; border-radius:8px;
-  background:var(--surface-2); border:1px solid var(--border);
-  display:flex; align-items:center; justify-content:center;
-  font-size:11px; font-weight:700; color:var(--text-2);
-  transition:all .2s;
-}
-.soc:hover { border-color:var(--border-strong); color:var(--text); transform:translateY(-2px); }
 
-/* ─── Powered by Plesk ─── */
+/* ─── PLESK BAR ─── */
 .plesk-bar {
-  border-top:1px solid var(--border);
-  padding:14px 32px;
-  background:rgba(0,0,0,.18);
-  text-align:center;
+  border-top:1px solid var(--border); padding:12px 36px;
+  background:rgba(0,0,0,.2);
 }
-.plesk-bar-inner {
+.plesk-inner {
   max-width:1100px; margin:0 auto;
-  display:flex; align-items:center; justify-content:center; gap:8px;
+  display:flex; align-items:center; justify-content:center; gap:9px;
 }
-.plesk-bar a {
-  display:inline-flex; align-items:center; gap:7px;
-  font-size:12px; color:var(--text-3);
-  transition:color .2s;
-}
-.plesk-bar a:hover { color:var(--text-2); }
-.plesk-bar a .material-symbols-rounded { font-size:14px; }
-.plesk-logo {
-  display:inline-flex; align-items:center; gap:5px;
-  font-size:12px; font-weight:700; color:var(--text-2);
+.plesk-txt { font-size:11px; color:var(--text-3); }
+.plesk-btn {
+  display:inline-flex; align-items:center; gap:6px;
+  font-size:11px; font-weight:700; color:var(--text-2);
   background:var(--surface-2); border:1px solid var(--border);
-  padding:3px 10px 3px 7px; border-radius:6px;
+  padding:3px 10px 3px 8px; border-radius:6px;
   transition:all .2s;
 }
-.plesk-logo:hover { border-color:var(--border-strong); color:var(--text); background:var(--surface); }
-.plesk-dot {
-  width:8px; height:8px; border-radius:50%;
-  background:linear-gradient(135deg,#007acc,#5865f2);
-  flex-shrink:0;
-}
+.plesk-btn:hover { border-color:var(--border-strong); color:var(--text); background:var(--surface-3); }
+.plesk-dot { width:7px; height:7px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent-2)); flex-shrink:0; }
 
-/* ─── Toasts ─── */
+/* ─── TOASTS ─── */
 #toasts { position:fixed; bottom:24px; right:24px; z-index:999; display:flex; flex-direction:column; gap:10px; }
 .toast {
-  background:var(--surface-2); border:1px solid var(--border);
+  background:rgba(22,22,34,0.97); border:1px solid var(--border-strong);
   padding:14px 18px; border-radius:var(--radius);
   display:flex; align-items:center; gap:12px;
-  box-shadow:0 16px 40px rgba(0,0,0,.5);
-  animation:slide-in-right .35s both;
-  min-width:280px; border-left:3px solid var(--accent);
-  transition:opacity .25s, transform .25s;
+  box-shadow:0 20px 50px rgba(0,0,0,.6); animation:slide-right .35s both;
+  min-width:288px; border-left:3px solid var(--accent);
+  transition:opacity .25s, transform .25s; backdrop-filter:blur(20px);
 }
-.toast-icon { width:36px; height:36px; border-radius:9px; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center; flex-shrink:0; border:1px solid rgba(0,122,204,.2); }
+.toast-icon { width:36px; height:36px; border-radius:9px; background:var(--accent-soft); color:var(--accent); display:flex; align-items:center; justify-content:center; flex-shrink:0; border:1px solid rgba(79,142,247,.2); }
 .toast-icon .material-symbols-rounded { font-size:18px; }
-.toast-title { font-size:13px; font-weight:600; color:var(--text); margin-bottom:2px; }
+.toast-title { font-size:13px; font-weight:700; color:var(--text); margin-bottom:2px; }
 .toast-sub { font-size:11px; color:var(--text-2); font-family:var(--mono); }
 
-/* ─── Responsive ─── */
+/* ─── SCROLL REVEAL ─── */
+.reveal { opacity:0; transform:translateY(28px); transition:opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+.reveal.visible { opacity:1; transform:translateY(0); }
+.reveal-delay-1 { transition-delay:.08s; }
+.reveal-delay-2 { transition-delay:.16s; }
+.reveal-delay-3 { transition-delay:.24s; }
+.reveal-delay-4 { transition-delay:.32s; }
+
+/* ─── RESPONSIVE ─── */
 @media (max-width:1024px) {
   .archive-thead { display:none; }
-  .a-item { grid-template-columns:1fr; gap:10px; padding:18px 20px; }
+  .a-item { grid-template-columns:1fr; gap:10px; padding:20px 22px; }
   .dl-btn { opacity:1; transform:none; }
-  .discord-grid { grid-template-columns:1fr; }
-  .footer-grid { grid-template-columns:1fr 1fr; gap:36px; }
-  .features { grid-template-columns:1fr; }
+  .discord-grid { grid-template-columns:1fr; gap:48px; padding:40px; }
+  .footer-top { grid-template-columns:1fr 1fr; gap:40px; }
+  .feat-grid { grid-template-columns:1fr; }
+  .steps { grid-template-columns:1fr; }
+  .step-arrow { display:none; }
+  .stats-row { grid-template-columns:1fr; }
 }
 @media (max-width:720px) {
-  .hero h1 { font-size:40px; letter-spacing:-1.5px; }
+  .hero h1 { font-size:44px; letter-spacing:-2px; }
   nav { display:none; }
   .hero, .section { padding-left:20px; padding-right:20px; }
   footer { padding-left:20px; padding-right:20px; }
-  .hero-actions { flex-direction:column; align-items:center; }
-  .btn { width:100%; max-width:240px; justify-content:center; }
-  .footer-grid { grid-template-columns:1fr; gap:28px; }
-  .footer-bottom { flex-direction:column; gap:16px; text-align:center; }
-  .hdr { padding:0 20px; }
   .plesk-bar { padding-left:20px; padding-right:20px; }
+  .hero-actions { flex-direction:column; align-items:center; }
+  .btn { width:100%; max-width:260px; justify-content:center; }
+  .footer-top { grid-template-columns:1fr; gap:32px; }
+  .footer-bottom { flex-direction:column; gap:14px; text-align:center; }
+  .hdr { padding:0 20px; }
+  .discord-grid { padding:28px; gap:36px; }
+  .hero-meta { flex-direction:column; gap:10px; }
 }
 </style>
 </head>
 <body>
+<div class="bg-grid"></div>
+<div class="bg-orb bg-orb-1"></div>
+<div class="bg-orb bg-orb-2"></div>
+<div class="bg-orb bg-orb-3"></div>
 <div class="bg-noise"></div>
-<div class="bg-gradient"></div>
 
 <!-- HEADER -->
 <header id="hdr">
   <div class="hdr">
     <a href="#" class="logo">
-      <img src="1.png" alt="SynthCore" onerror="this.style.display='none'">
+      <div class="logo-icon">
+        <img src="1.png" alt="SC" onerror="this.style.display='none';this.parentElement.textContent='SC'">
+      </div>
       <div>
-        <span class="logo-name">SynthCore</span>
-        <span class="logo-tag">Ultimate</span>
+        <div class="logo-name">SynthCore</div>
+        <div class="logo-tag">Ultimate</div>
       </div>
     </a>
     <nav>
       <a href="#features"><span class="material-symbols-rounded">stars</span> Features</a>
+      <a href="#how"><span class="material-symbols-rounded">route</span> How it works</a>
       <a href="#archive"><span class="material-symbols-rounded">download</span> Download</a>
-      <a href="#discord"><span class="material-symbols-rounded">forum</span> Discord</a>
+      <a href="#discord"><span class="material-symbols-rounded">forum</span> Community</a>
     </nav>
-    <a href="#archive" class="hdr-dl" onclick="startDownload(); return false;">
+    <a href="#archive" class="hdr-cta" onclick="startDownload(); return false;">
       <span class="material-symbols-rounded">download</span> Download
     </a>
   </div>
@@ -525,81 +690,149 @@ footer {
   <section class="hero">
     <div class="hero-badge">
       <span class="dot"></span>
-      v3.5.0 ist da — PaperPlugin Maven Build, neue KI-Engine
+      <span>v3.5.0 — <strong>PaperPlugin Maven Build</strong> + neue KI-Engine</span>
     </div>
-    <h1>Der schnellste Weg<br>zum <em>fertigen Projekt</em></h1>
-    <p class="hero-sub">Python-Skripte, Web-Apps, APIs und Discord-Bots in Sekunden. Schreib was du willst — SynthCore baut's.</p>
+    <h1>
+      <span class="line-1">Code schreiben war</span>
+      <span class="line-2">gestern.</span>
+    </h1>
+    <p class="hero-sub">Beschreib dein Projekt in einem Satz. SynthCore baut es — Python, Web-Apps, APIs, Discord-Bots. Vollautomatisch.</p>
     <div class="hero-actions">
       <button class="btn btn-primary" onclick="startDownload()">
-        <span class="material-symbols-rounded">download</span> Jetzt herunterladen
+        <span class="material-symbols-rounded">download</span> Kostenlos herunterladen
       </button>
-      <a href="#archive" class="btn btn-ghost">
-        <span class="material-symbols-rounded">history</span> Alle Versionen
+      <a href="#features" class="btn btn-ghost">
+        <span class="material-symbols-rounded">play_circle</span> Features entdecken
       </a>
     </div>
+    <div class="hero-meta">
+      <span><span class="material-symbols-rounded">verified</span> Kostenlos &amp; Open Source</span>
+      <span><span class="material-symbols-rounded">shield</span> Windows x64</span>
+      <span><span class="material-symbols-rounded">update</span> v3.5.0 Stable</span>
+    </div>
 
-    <!-- MARQUEE -->
     <div class="marquee-wrap">
       <div class="marquee-track" id="mt"></div>
     </div>
 
-    <!-- PREVIEW -->
-    <div class="preview-container" style="margin-top:52px;">
-      <div class="preview-window">
-        <div class="preview-bar">
-          <div class="traffic">
-            <div class="tl tl-r"></div>
-            <div class="tl tl-y"></div>
-            <div class="tl tl-g"></div>
+    <div class="preview-container">
+      <div class="preview-shell">
+        <div class="preview-window">
+          <div class="preview-bar">
+            <div class="traffic">
+              <div class="tl tl-r"></div>
+              <div class="tl tl-y"></div>
+              <div class="tl tl-g"></div>
+            </div>
+            <div class="preview-bar-addr">
+              <div class="preview-bar-pill">
+                <span class="material-symbols-rounded">lock</span>
+                synthcore.dev — Live Demo
+              </div>
+            </div>
           </div>
-          <span class="preview-bar-title">SynthCore Ultimate — Live Preview</span>
+          <iframe class="preview-iframe" id="simFrame" sandbox="allow-scripts allow-same-origin" title="Preview"></iframe>
         </div>
-        <iframe class="preview-iframe" id="simFrame" sandbox="allow-scripts allow-same-origin" title="Preview"></iframe>
+      </div>
+    </div>
+
+    <div class="stats-row reveal">
+      <div class="stat">
+        <div class="stat-num" data-target="10">0</div>
+        <div class="stat-label">Sprachen &amp; Frameworks</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="3">0</div>
+        <div class="stat-label">Sekunden bis zum ersten Build</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-target="100">0</div>
+        <div class="stat-label">% Kostenlos</div>
       </div>
     </div>
   </section>
 
   <!-- FEATURES -->
   <section class="section" id="features">
-    <div class="section-label"><span class="material-symbols-rounded">stars</span> Was SynthCore kann</div>
-    <h2 class="section-title">Alles was du brauchst,<br>out of the box.</h2>
-    <p class="section-sub">Keine Konfiguration, kein Boilerplate — beschreibe dein Projekt und lass die KI den Rest erledigen.</p>
-    <div class="features">
-      <div class="feat">
-        <div class="feat-icon"><span class="material-symbols-rounded">code</span></div>
+    <div class="reveal">
+      <div class="section-eyebrow"><span class="material-symbols-rounded">stars</span> Features</div>
+      <h2 class="section-h">Alles drin.<br><em>Nichts konfigurieren.</em></h2>
+      <p class="section-p">Keine Dependencies suchen, kein Boilerplate — einfach beschreiben und loslegen.</p>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal reveal-delay-1">
+        <div class="feat-glow"></div>
+        <div class="feat-shine"></div>
+        <div class="feat-icon"><span class="material-symbols-rounded">smart_toy</span></div>
         <div class="feat-title">KI-Codegenerierung</div>
-        <div class="feat-desc">Schreib einen Satz — SynthCore generiert vollständigen, lauffähigen Code für Python, JavaScript, Java und mehr.</div>
-        <span class="feat-pill"><span class="material-symbols-rounded">language</span> Multi-Language</span>
+        <div class="feat-desc">Schreib einen Satz in natürlicher Sprache — SynthCore generiert vollständigen, lauffähigen Code. Python, JavaScript, Java und mehr.</div>
+        <span class="feat-tag"><span class="material-symbols-rounded">language</span> Multi-Language</span>
       </div>
-      <div class="feat">
-        <div class="feat-icon"><span class="material-symbols-rounded">build</span></div>
+      <div class="feat reveal reveal-delay-2">
+        <div class="feat-glow"></div>
+        <div class="feat-shine"></div>
+        <div class="feat-icon"><span class="material-symbols-rounded">rocket_launch</span></div>
         <div class="feat-title">Automatische Builds</div>
-        <div class="feat-desc">Integrierte Pipelines für Maven, pip und npm. Kompilieren, testen, deployen — vollautomatisch, ohne Setup.</div>
-        <span class="feat-pill"><span class="material-symbols-rounded">deployed_code</span> CI/CD Ready</span>
+        <div class="feat-desc">Integrierte Pipelines für Maven, pip und npm. Kompilieren, testen, deployen — vollautomatisch, kein Setup nötig.</div>
+        <span class="feat-tag"><span class="material-symbols-rounded">deployed_code</span> CI/CD Ready</span>
       </div>
-      <div class="feat">
+      <div class="feat reveal reveal-delay-3">
+        <div class="feat-glow"></div>
+        <div class="feat-shine"></div>
         <div class="feat-icon"><span class="material-symbols-rounded">visibility</span></div>
         <div class="feat-title">Live Vorschau</div>
-        <div class="feat-desc">Sieh deinen Code sofort in Aktion. Die eingebettete Sandbox startet in Echtzeit, ohne Wartezeit.</div>
-        <span class="feat-pill"><span class="material-symbols-rounded">shield</span> Sandboxed</span>
+        <div class="feat-desc">Sieh deinen Code sofort in Aktion. Die eingebettete Sandbox läuft in Echtzeit — sicher isoliert, ohne Wartezeit.</div>
+        <span class="feat-tag"><span class="material-symbols-rounded">shield</span> Sandboxed</span>
       </div>
-      <div class="feat">
-        <div class="feat-icon"><span class="material-symbols-rounded">folder_zip</span></div>
+      <div class="feat reveal reveal-delay-4">
+        <div class="feat-glow"></div>
+        <div class="feat-shine"></div>
+        <div class="feat-icon"><span class="material-symbols-rounded">folder_special</span></div>
         <div class="feat-title">Projektmanagement</div>
-        <div class="feat-desc">Alle Projekte an einem Ort. Versionierung, Changelogs, History — nichts geht verloren.</div>
-        <span class="feat-pill"><span class="material-symbols-rounded">history_toggle_off</span> Version Control</span>
+        <div class="feat-desc">Alle Projekte an einem Ort. Versionierung, Changelogs, vollständige History — nichts geht verloren.</div>
+        <span class="feat-tag"><span class="material-symbols-rounded">history_toggle_off</span> Version Control</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how" style="padding-top:20px;">
+    <div class="reveal">
+      <div class="section-eyebrow"><span class="material-symbols-rounded">route</span> So funktioniert's</div>
+      <h2 class="section-h">Drei Schritte.<br><em>Fertig.</em></h2>
+      <p class="section-p">Von der Idee zum laufenden Projekt in unter einer Minute.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal reveal-delay-1">
+        <div class="step-num">01</div>
+        <div class="step-title">Beschreiben</div>
+        <div class="step-desc">Tippe was du bauen willst — auf Deutsch oder Englisch. Z.B. "Discord Bot mit Slash Commands" oder "REST API mit Python Flask".</div>
+        <div class="step-arrow"><span class="material-symbols-rounded">arrow_forward</span></div>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-num">02</div>
+        <div class="step-title">Generieren</div>
+        <div class="step-desc">SynthCore analysiert dein Projekt, wählt das beste Framework und generiert vollständigen, kommentierten Code.</div>
+        <div class="step-arrow"><span class="material-symbols-rounded">arrow_forward</span></div>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <div class="step-num">03</div>
+        <div class="step-title">Bauen &amp; Starten</div>
+        <div class="step-desc">Die integrierte Build-Pipeline installiert alle Dependencies und kompiliert das Projekt — du klickst einmal auf Run.</div>
       </div>
     </div>
   </section>
 
   <!-- ARCHIVE -->
   <section class="section" id="archive" style="padding-top:20px;">
-    <div class="section-label"><span class="material-symbols-rounded">history</span> Versionsarchiv</div>
-    <h2 class="section-title">Alle Releases.</h2>
-    <p class="section-sub">Neueste Version ganz oben. Ältere Builds weiterhin verfügbar.</p>
-    <div class="archive-box">
+    <div class="reveal">
+      <div class="section-eyebrow"><span class="material-symbols-rounded">history</span> Downloads</div>
+      <h2 class="section-h">Alle Releases.</h2>
+      <p class="section-p">Neueste Version ganz oben. Ältere Builds bleiben immer verfügbar.</p>
+    </div>
+    <div class="archive-box reveal">
       <div class="archive-thead">
-        <div>Version</div>
+        <div>Version &amp; Änderungen</div>
         <div>Status</div>
         <div>Datum</div>
         <div>Größe</div>
@@ -610,68 +843,70 @@ footer {
   </section>
 
   <!-- DISCORD -->
-  <section class="section" id="discord" style="padding-top:40px;">
-    <div class="discord-grid">
-      <div>
-        <div class="discord-label"><span class="material-symbols-rounded">forum</span> Community</div>
-        <h2 class="discord-title">Wenn du den Link<br>in Discord postest.</h2>
-        <p class="discord-sub">Dank eingebauter OpenGraph-Metadaten erscheint dieser Embed automatisch — du musst nichts extra machen.</p>
-        <div class="discord-feats">
-          <div class="discord-feat"><span class="material-symbols-rounded">check_circle</span> Automatischer Embed mit Titel &amp; Beschreibung</div>
-          <div class="discord-feat"><span class="material-symbols-rounded">check_circle</span> Blauer Akzentbalken (#007ACC)</div>
-          <div class="discord-feat"><span class="material-symbols-rounded">check_circle</span> Version, Größe &amp; Datum direkt sichtbar</div>
-          <div class="discord-feat"><span class="material-symbols-rounded">check_circle</span> Farbige Statusanzeige im Embed</div>
-        </div>
-        <a href="https://discord.gg/CWJ5FnZNXn" target="_blank" rel="noopener noreferrer" class="btn btn-dc">
-          <span class="material-symbols-rounded">forum</span> Discord beitreten
-        </a>
-      </div>
-      <div>
-        <div class="dc-mock">
-          <div class="dc-mock-head">
-            <span class="dc-hash">#</span>
-            <span>downloads</span>
+  <section class="section" id="discord" style="padding-top:20px;">
+    <div class="discord-wrap reveal">
+      <div class="discord-grid">
+        <div>
+          <div class="discord-eyebrow"><span class="material-symbols-rounded">forum</span> Community</div>
+          <h2 class="discord-h">Werde Teil der<br>Community.</h2>
+          <p class="discord-p">Tausche dich mit anderen aus, bekomm Hilfe beim Einrichten und erfahre als Erster von neuen Updates.</p>
+          <div class="discord-checks">
+            <div class="discord-check"><span class="material-symbols-rounded">check_circle</span> Support direkt vom Entwickler</div>
+            <div class="discord-check"><span class="material-symbols-rounded">check_circle</span> Update-Ankündigungen als Erster</div>
+            <div class="discord-check"><span class="material-symbols-rounded">check_circle</span> Feature-Requests &amp; Feedback</div>
+            <div class="discord-check"><span class="material-symbols-rounded">check_circle</span> Automatischer Embed wenn du den Link postest</div>
           </div>
-          <div class="dc-body">
-            <div class="dc-msg">
-              <div class="dc-av dc-av-user">B</div>
-              <div class="dc-msg-right">
-                <div class="dc-msg-top">
-                  <span class="dc-name">Blockem13</span>
-                  <span class="dc-ts">Heute 14:23</span>
-                </div>
-                <div class="dc-text">Neues Update ist live! 🎉</div>
-                <span class="dc-link">https://synthcore.dev</span>
-                <div class="dc-embed">
-                  <div class="dc-embed-thumb">SC</div>
-                  <div class="dc-embed-author">
-                    <div class="dc-embed-av">S</div>
-                    <div class="dc-embed-aname">synthcore.dev</div>
+          <a href="https://discord.gg/CWJ5FnZNXn" target="_blank" rel="noopener noreferrer" class="btn btn-dc">
+            <span class="material-symbols-rounded">forum</span> Discord beitreten
+          </a>
+        </div>
+        <div>
+          <div class="dc-mock">
+            <div class="dc-mock-head">
+              <span class="dc-hash">#</span>
+              <span>downloads</span>
+            </div>
+            <div class="dc-body">
+              <div class="dc-msg">
+                <div class="dc-av dc-av-user">B</div>
+                <div class="dc-msg-right">
+                  <div class="dc-msg-top">
+                    <span class="dc-name">Blockem13</span>
+                    <span class="dc-ts">Heute 14:23</span>
                   </div>
-                  <div class="dc-embed-title">SynthCore Ultimate v3.5.0 — Jetzt verfügbar!</div>
-                  <div class="dc-embed-desc">⚡ KI-Projekt-Builder für Python, Web-Apps, APIs &amp; Discord-Bots. Jetzt herunterladen!</div>
-                  <div class="dc-embed-grid">
-                    <div><div class="dc-field-name">Version</div><div class="dc-field-val green">● 3.5.0 Stable</div></div>
-                    <div><div class="dc-field-name">Größe</div><div class="dc-field-val blue">128 MB</div></div>
-                    <div><div class="dc-field-name">Plattform</div><div class="dc-field-val">Windows x64</div></div>
-                    <div><div class="dc-field-name">Datum</div><div class="dc-field-val gold">24.10.2023</div></div>
-                  </div>
-                  <div class="dc-embed-footer">
-                    <div class="dc-embed-footer-dot"></div>
-                    <div class="dc-embed-footer-text">SynthCore Ultimate • Blockem13 • v3.5.0</div>
+                  <div class="dc-text">Neues Update ist live! 🎉</div>
+                  <span class="dc-link">https://synthcore.dev</span>
+                  <div class="dc-embed">
+                    <div class="dc-embed-thumb">SC</div>
+                    <div class="dc-embed-author">
+                      <div class="dc-embed-av">S</div>
+                      <div class="dc-embed-aname">synthcore.dev</div>
+                    </div>
+                    <div class="dc-embed-title">SynthCore Ultimate v3.5.0 — Jetzt verfügbar!</div>
+                    <div class="dc-embed-desc">⚡ KI-Projekt-Builder für Python, Web-Apps, APIs &amp; Discord-Bots.</div>
+                    <div class="dc-embed-grid">
+                      <div><div class="dc-field-name">Version</div><div class="dc-field-val green">● 3.5.0 Stable</div></div>
+                      <div><div class="dc-field-name">Größe</div><div class="dc-field-val blue">128 MB</div></div>
+                      <div><div class="dc-field-name">Plattform</div><div class="dc-field-val">Windows x64</div></div>
+                      <div><div class="dc-field-name">Datum</div><div class="dc-field-val gold">24.10.2023</div></div>
+                    </div>
+                    <div class="dc-embed-footer">
+                      <div class="dc-embed-footer-dot"></div>
+                      <div class="dc-embed-footer-text">SynthCore Ultimate • Blockem13 • v3.5.0</div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="dc-bot-msg">
-              <div class="dc-av dc-av-bot">SC</div>
-              <div class="dc-msg-right">
-                <div class="dc-msg-top">
-                  <span class="dc-name">SynthCore Bot</span>
-                  <span class="dc-bot-tag">BOT</span>
-                  <span class="dc-ts">14:23</span>
+              <div class="dc-bot-msg">
+                <div class="dc-av dc-av-bot">SC</div>
+                <div class="dc-msg-right">
+                  <div class="dc-msg-top">
+                    <span class="dc-name">SynthCore Bot</span>
+                    <span class="dc-bot-tag">BOT</span>
+                    <span class="dc-ts">14:23</span>
+                  </div>
+                  <div class="dc-text">✅ v3.5.0 erfolgreich deployed!</div>
                 </div>
-                <div class="dc-text">✅ v3.5.0 erfolgreich deployed!</div>
               </div>
             </div>
           </div>
@@ -684,61 +919,63 @@ footer {
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo">
-          <img src="1.png" alt="SynthCore" onerror="this.style.display='none'">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-row">
+          <div class="footer-logo-icon">
+            <img src="1.png" alt="SC" onerror="this.style.display='none';this.parentElement.textContent='SC'">
+          </div>
           <span class="footer-logo-name">SynthCore</span>
         </div>
-        <p class="footer-desc">KI-Projekt-Builder für Python, Web-Apps, APIs und Discord-Bots. Made by Blockem13.</p>
-        <a href="https://discord.gg/CWJ5FnZNXn" target="_blank" rel="noopener noreferrer" class="footer-dc-btn">
-          <span class="material-symbols-rounded">forum</span> Discord beitreten
-        </a>
+        <p class="footer-desc">KI-Projekt-Builder für Python, Web-Apps, APIs und Discord-Bots. Made with ♥ by Blockem13.</p>
+        <div class="footer-social-row">
+          <a href="https://discord.gg/CWJ5FnZNXn" target="_blank" rel="noopener noreferrer" class="fsoc" title="Discord">DC</a>
+          <a href="https://github.com/blockem31-cloud" target="_blank" rel="noopener noreferrer" class="fsoc" title="GitHub">GH</a>
+          <a href="https://federtweet.com/profile/Blockem131" target="_blank" rel="noopener noreferrer" class="fsoc" title="Federtweet">FT</a>
+        </div>
       </div>
       <div class="footer-col">
         <h5>Produkt</h5>
         <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#archive">Download</a></li>
-          <li><a href="#archive">Versionsarchiv</a></li>
-          <li><a href="#">Changelog</a></li>
+          <li><a href="#features"><span class="material-symbols-rounded">stars</span>Features</a></li>
+          <li><a href="#how"><span class="material-symbols-rounded">route</span>How it works</a></li>
+          <li><a href="#archive"><span class="material-symbols-rounded">download</span>Download</a></li>
+          <li><a href="#archive"><span class="material-symbols-rounded">history</span>Versionsarchiv</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Ressourcen</h5>
         <ul>
-          <li><a href="#">Dokumentation</a></li>
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Issues</a></li>
-          <li><a href="#">Roadmap</a></li>
+          <li><a href="#"><span class="material-symbols-rounded">menu_book</span>Dokumentation</a></li>
+          <li><a href="https://github.com/blockem31-cloud" target="_blank" rel="noopener noreferrer"><span class="material-symbols-rounded">code</span>GitHub</a></li>
+          <li><a href="https://github.com/blockem31-cloud" target="_blank" rel="noopener noreferrer"><span class="material-symbols-rounded">bug_report</span>Issues</a></li>
+          <li><a href="#"><span class="material-symbols-rounded">map</span>Roadmap</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h5>Rechtliches</h5>
         <ul>
-          <li><a href="#">Impressum</a></li>
-          <li><a href="#">Datenschutz</a></li>
-          <li><a href="#">Lizenzen</a></li>
-          <li><a href="#">Nutzungsbedingungen</a></li>
+          <li><a href="#"><span class="material-symbols-rounded">gavel</span>Impressum</a></li>
+          <li><a href="#"><span class="material-symbols-rounded">privacy_tip</span>Datenschutz</a></li>
+          <li><a href="#"><span class="material-symbols-rounded">policy</span>Lizenzen</a></li>
+          <li><a href="#"><span class="material-symbols-rounded">description</span>Nutzungsbedingungen</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2026 <strong>Blockem13</strong>. SynthCore Project.</div>
-      <div class="footer-socials">
-        <a href="https://discord.gg/CWJ5FnZNXn" target="_blank" rel="noopener noreferrer" class="soc" title="Discord">DC</a>
-        <a href="#" class="soc" title="GitHub">GH</a>
-        <a href="https://federtweet.com/profile/Blockem131" target="_blank" rel="noopener noreferrer" class="soc" title="Federtweet">FT</a>
-      </div>
+      <div>© 2026 <strong>Blockem13</strong>. SynthCore Project. Alle Rechte vorbehalten.</div>
+      <a href="https://discord.gg/CWJ5FnZNXn" target="_blank" rel="noopener noreferrer" class="footer-dc-btn">
+        <span class="material-symbols-rounded">forum</span> Discord beitreten
+      </a>
     </div>
   </div>
 </footer>
 
-<!-- POWERED BY PLESK -->
+<!-- PLESK -->
 <div class="plesk-bar">
-  <div class="plesk-bar-inner">
-    <span style="font-size:12px;color:var(--text-3);">Powered by</span>
-    <a href="https://www.plesk.com/" target="_blank" rel="noopener noreferrer" class="plesk-logo">
+  <div class="plesk-inner">
+    <span class="plesk-txt">Powered by</span>
+    <a href="https://www.plesk.com/" target="_blank" rel="noopener noreferrer" class="plesk-btn">
       <div class="plesk-dot"></div>
       Plesk
     </a>
@@ -748,9 +985,9 @@ footer {
 <div id="toasts"></div>
 
 <script>
-// ── Data ──────────────────────────────────────
+// ── Archive Data ───────────────────────────────
 const archiveData = [
-  { version:"3.5.0", date:"2023-10-24", type:"Stable", size:"128 MB", changes:"PaperPlugin Maven auto-build; Verbesserte KI-Generierung; Memory-Leaks behoben; Neues dark Theme.", filename:"SynthCore-3.5.0.exe" },
+  { version:"3.5.0", date:"2023-10-24", type:"Stable", size:"128 MB", changes:"PaperPlugin Maven auto-build; Verbesserte KI-Generierung; Memory-Leaks behoben; Neues Dark Theme.", filename:"SynthCore-3.5.0.exe" },
   { version:"3.4.2", date:"2023-08-15", type:"Stable", size:"124 MB", changes:"Memory-Leak im Python-Interpreter behoben; Bessere UI-Performance; Neues Dark Theme.", filename:"SynthCore-3.4.2.exe" },
   { version:"3.4.0", date:"2023-07-20", type:"Stable", size:"122 MB", changes:"Neues KI-Modell integriert; Schnellere Build-Zeiten; Bug-Fixes.", filename:"SynthCore-3.4.0.exe" },
   { version:"3.2.5", date:"2023-06-10", type:"Beta",   size:"118 MB", changes:"Experimenteller Java-Plugin-Support; Crash beim Start bei manchen Nutzern behoben.", filename:"SynthCore-3.2.5.exe" },
@@ -758,26 +995,30 @@ const archiveData = [
   { version:"2.9.8", date:"2023-01-10", type:"Legacy", size:"98 MB",  changes:"Letzte Version der v2-Engine; Veraltete Features entfernt.", filename:"SynthCore-2.9.8.exe" },
 ];
 
-// ── Marquee — Material Icons ──────────────────
+// ── Marquee ───────────────────────────────────
 const marqueeItems = [
-  { icon:"code",           label:"Python"       },
-  { icon:"language",       label:"JavaScript"   },
-  { icon:"terminal",       label:"Bash"         },
-  { icon:"api",            label:"REST API"     },
-  { icon:"smart_toy",      label:"Discord Bot"  },
-  { icon:"build",          label:"Maven Build"  },
-  { icon:"deployed_code",  label:"Node.js"      },
-  { icon:"folder_zip",     label:"Projekte"     },
-  { icon:"visibility",     label:"Live Preview" },
-  { icon:"shield",         label:"Sandbox"      },
-  { icon:"memory",         label:"Java"         },
-  { icon:"rocket_launch",  label:"Deploy"       },
+  { icon:"code",          label:"Python"       },
+  { icon:"language",      label:"JavaScript"   },
+  { icon:"terminal",      label:"Bash"         },
+  { icon:"api",           label:"REST API"     },
+  { icon:"smart_toy",     label:"Discord Bot"  },
+  { icon:"build",         label:"Maven Build"  },
+  { icon:"deployed_code", label:"Node.js"      },
+  { icon:"folder_zip",    label:"Projekte"     },
+  { icon:"visibility",    label:"Live Preview" },
+  { icon:"shield",        label:"Sandbox"      },
+  { icon:"memory",        label:"Java"         },
+  { icon:"rocket_launch", label:"Deploy"       },
 ];
 
 function buildMarquee() {
   const track = document.getElementById('mt');
-  const all = [...marqueeItems, ...marqueeItems]; // duplicate for seamless loop
-  all.forEach(item => {
+  [...marqueeItems, ...marqueeItems].forEach((item, i) => {
+    if (i > 0 && i % 1 === 0) {
+      const sep = document.createElement('div');
+      sep.className = 'marquee-sep';
+      track.appendChild(sep);
+    }
     const el = document.createElement('div');
     el.className = 'marquee-item';
     el.innerHTML = `<span class="material-symbols-rounded">${item.icon}</span><span>${item.label}</span>`;
@@ -790,7 +1031,7 @@ function buildArchive() {
   const list = document.getElementById('archList');
   archiveData.forEach((d, i) => {
     const t = d.type.toLowerCase();
-    const cls = t==='stable'?'badge-stable': t==='beta'?'badge-beta': t==='alpha'?'badge-alpha':'badge-legacy';
+    const cls = t==='stable'?'badge-stable':t==='beta'?'badge-beta':t==='alpha'?'badge-alpha':'badge-legacy';
     const dateStr = new Date(d.date).toLocaleDateString('de-DE', {day:'2-digit',month:'2-digit',year:'numeric'});
     const el = document.createElement('div');
     el.className = 'a-item';
@@ -807,20 +1048,53 @@ function buildArchive() {
     `;
     list.appendChild(el);
   });
-  // Stagger-animate in
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => {
       if (e.isIntersecting) {
         const idx = [...document.querySelectorAll('.a-item')].indexOf(e.target);
-        e.target.style.animation = `fade-up .45s ${idx * 55}ms both`;
+        e.target.style.animation = `fade-up .5s ${idx * 60}ms both`;
         io.unobserve(e.target);
       }
     });
-  }, { threshold: 0.05 });
+  }, { threshold: 0.04 });
   document.querySelectorAll('.a-item').forEach(el => io.observe(el));
 }
 
-// ── Download ───────────────────────────────────
+// ── Scroll Reveal ─────────────────────────────
+function initReveal() {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+}
+
+// ── Stat counter ──────────────────────────────
+function animateStats() {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.stat-num').forEach(el => {
+          const target = +el.dataset.target;
+          const suffix = el.dataset.suffix || (target === 100 ? '%' : '+');
+          let start = 0;
+          const step = target / 40;
+          const timer = setInterval(() => {
+            start = Math.min(start + step, target);
+            el.textContent = Math.floor(start) + suffix;
+            if (start >= target) clearInterval(timer);
+          }, 30);
+        });
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  const statsRow = document.querySelector('.stats-row');
+  if (statsRow) io.observe(statsRow);
+}
+
+// ── Download ─────────────────────────────────
 function startDownload() { downloadFile(archiveData[0].filename, archiveData[0].version); }
 
 function downloadFile(filename, ver) {
@@ -842,32 +1116,31 @@ function downloadFile(filename, ver) {
     t.querySelector('.toast-title').textContent = 'Download läuft…';
   }, 1800);
   setTimeout(() => {
-    t.style.opacity = '0';
-    t.style.transform = 'translateX(12px)';
+    t.style.opacity = '0'; t.style.transform = 'translateX(14px)';
     setTimeout(() => t.remove(), 300);
   }, 5000);
 }
 
-// ── Scroll header ──────────────────────────────
+// ── Scroll header ────────────────────────────
 window.addEventListener('scroll', () => {
-  document.getElementById('hdr').classList.toggle('scrolled', window.scrollY > 30);
-});
+  document.getElementById('hdr').classList.toggle('scrolled', window.scrollY > 28);
+}, { passive:true });
 
-// ── Simulation HTML ────────────────────────────
-const simHTML = `<!DOCTYPE html><html><head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#0c0c0e;color:#e8e8ec;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;overflow:hidden;height:100vh}.material-symbols-rounded{font-family:'Material Symbols Rounded';font-weight:normal;font-style:normal;line-height:1;display:inline-flex;vertical-align:middle;font-size:17px}#wrap{display:flex;height:100vh}#sidebar{width:240px;background:#111114;border-right:1px solid #1e1e24;display:flex;flex-direction:column;pointer-events:none}#sb-top{padding:14px;border-bottom:1px solid #1e1e24;display:flex;align-items:center;gap:10px}.sb-logo{width:28px;height:28px;background:linear-gradient(135deg,#007acc,#5865F2);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff}.sb-name{font-size:14px;font-weight:700}.sb-sub{font-size:10px;color:#555;margin-top:1px}#new-btn{margin:10px;padding:9px 12px;background:#1a1a1e;border:1px solid #2a2a30;border-radius:8px;color:#666;cursor:not-allowed;display:flex;align-items:center;gap:7px;font-size:12px;opacity:.5}#sb-label{padding:10px 14px 5px;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#333;font-weight:600}#history{flex:1;padding:4px 8px}.h-item{padding:7px 10px;border-radius:6px;color:#3a3a44;font-size:12px;display:flex;align-items:center;gap:8px}#sb-foot{padding:10px;border-top:1px solid #1e1e24}.sb-status{padding:7px 10px;display:flex;align-items:center;gap:7px;font-size:12px}.status-dot{width:6px;height:6px;border-radius:50%;background:#22c55e}#main{flex:1;display:flex;flex-direction:column;overflow:hidden}#topbar{padding:10px 18px;border-bottom:1px solid #1e1e24;display:flex;align-items:center;gap:10px;background:#0c0c0e}#model-chip{display:flex;align-items:center;gap:7px;padding:5px 12px;background:#1a1a1e;border:1px solid #2a2a30;border-radius:100px;font-size:12px;color:#666}#msgs{flex:1;overflow-y:auto;padding:18px}#welcome{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;gap:14px}.wl-icon{width:52px;height:52px;background:linear-gradient(135deg,#007acc,#5865F2);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#fff}.wl-title{font-size:20px;font-weight:700;letter-spacing:-.3px}.wl-sub{font-size:13px;color:#555;max-width:360px;line-height:1.5}.msg-row{padding:16px 18px;border-bottom:1px solid #1a1a1e;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}.msg-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}.av{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;background:#1a1a1e;border:1px solid #2a2a30;flex-shrink:0}.av.ai{background:rgba(0,122,204,.12);border-color:rgba(0,122,204,.3);color:#60b4ff}.msg-name{font-size:12px;font-weight:600;color:#666}.msg-time{font-size:10px;color:#333;margin-left:auto}.msg-body{padding-left:37px}.user-bubble{display:inline-block;background:#1a1a1e;border:1px solid #2a2a30;border-radius:9px;padding:7px 13px;font-size:13px}.ai-t{font-size:13px;color:#ccc;line-height:1.6}.status-pill{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;background:#1a1a1e;border:1px solid #2a2a30;border-radius:12px;font-size:12px;color:#555}.spin{width:14px;height:14px;border:2px solid #2a2a30;border-top-color:#007acc;border-radius:50%;animation:sp .7s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}.code-box{border:1px solid #2a2a30;border-radius:8px;margin:8px 0;overflow:hidden}.code-top{display:flex;align-items:center;justify-content:space-between;padding:7px 12px;background:#111114;border-bottom:1px solid #2a2a30}.code-lang{font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.5px}.code-file{font-family:monospace;font-size:11px;color:#666}.add{color:#22c55e;font-size:11px;font-weight:700}.pre{padding:14px;font-family:monospace;font-size:11px;line-height:1.5;color:#7ec8f5;background:#0c0c0e;overflow-x:auto}.term{position:fixed;right:0;top:0;width:380px;height:100vh;background:#0a0a0c;border-left:1px solid #1e1e24;z-index:10;transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}.term.open{transform:translateX(0)}.term-hdr{padding:10px 14px;background:#111114;border-bottom:1px solid #1e1e24;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600}.term-body{flex:1;overflow-y:auto;padding:14px;font-family:monospace;font-size:11px;line-height:1.6;color:#555}#input-area{padding:12px 16px;border-top:1px solid #1e1e24;background:#0c0c0e}#input-box{background:#111114;border:1px solid #2a2a30;border-radius:9px;overflow:hidden;opacity:.6}#ta{width:100%;background:transparent;border:none;outline:none;resize:none;padding:9px 13px;font-size:12px;color:#888;line-height:1.5;min-height:38px;cursor:not-allowed;font-family:inherit}#ta::placeholder{color:#333}#input-bar{display:flex;justify-content:flex-end;padding:5px 10px 9px}#send-btn{width:26px;height:26px;border-radius:7px;background:#007acc;border:none;display:flex;align-items:center;justify-content:center;opacity:.5}</style></head><body><div id="wrap"><nav id="sidebar"><div id="sb-top"><div class="sb-logo">SC</div><div><div class="sb-name">SynthCore</div><div class="sb-sub">Project Builder</div></div></div><button id="new-btn" disabled><span class="material-symbols-rounded">add</span>New Project</button><div id="sb-label">History</div><div id="history"><div class="h-item"><span class="material-symbols-rounded">chat</span>Demo Project</div></div><div id="sb-foot"><div class="sb-status"><div class="status-dot"></div><span style="color:#22c55e;">Ready</span></div></div></nav><main id="main"><div id="topbar"><div id="model-chip"><span class="material-symbols-rounded">smart_toy</span>SynthCore 3.5</div></div><div id="msgs"><div id="welcome"><div class="wl-icon">SC</div><div class="wl-title">SynthCore Ultimate</div><div class="wl-sub">Beschreibe dein Projekt und lass die KI den Rest erledigen.</div></div></div><div id="input-area"><div id="input-box"><textarea id="ta" placeholder="What should I build?" rows="1"></textarea><div id="input-bar"><button id="send-btn" disabled><span class="material-symbols-rounded">send</span></button></div></div></div></main><div class="term" id="term"><div class="term-hdr"><span class="material-symbols-rounded">terminal</span>Build Output</div><div class="term-body" id="term-body"></div></div></div><script>const PROMPT="Create a Python Discord bot with slash commands";const CODE="import discord\\nfrom discord import app_commands\\n\\nbot = discord.Bot()\\n\\n@bot.tree.command(name='ping')\\nasync def ping(interaction):\\n    await interaction\\n        .response\\n        .send_message('Pong!')\\n\\nbot.run('TOKEN')";const TERM="Starting build pipeline\\nAnalyzing project structure\\nInstalling discord.py...\\n✓ discord.py installed\\nCompiling source files\\n✓ bot.py generated\\nBuild successful — 11.2s";function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}function time(){return new Date().toLocaleTimeString()}function sb(){const m=document.getElementById('msgs');if(m)m.scrollTo({top:m.scrollHeight})}function hide(id){const e=document.getElementById(id);if(e)e.style.display='none'}function wait(n){return new Promise(r=>setTimeout(r,n))}async function type(el,text,spd=14){el.innerHTML='';for(let i=0;i<text.length;i++){el.innerHTML=esc(text.slice(0,i+1))+'<span style="display:inline-block;width:1.5px;height:1em;background:#007acc;margin-left:1px;vertical-align:text-bottom"></span>';if(i%12===0)sb();await wait(spd)}el.innerHTML=esc(text)}async function typeLog(text){const b=document.getElementById('term-body');for(const line of text.split('\\n')){b.innerHTML+='<span style="color:#22c55e">['+time()+']</span> <span>'+esc(line)+'</span>\\n';b.scrollTop=b.scrollHeight;await wait(30+Math.random()*20)}}async function run(){await wait(1600);const ta=document.getElementById('ta');for(let i=0;i<PROMPT.length;i++){ta.value=PROMPT.slice(0,i+1);await wait(38)}await wait(350);hide('welcome');const msgs=document.getElementById('msgs');const uRow=document.createElement('div');uRow.className='msg-row';uRow.innerHTML='<div class="msg-head"><div class="av">Du</div><span class="msg-name">Du</span><span class="msg-time">'+time()+'</span></div><div class="msg-body"><div class="user-bubble">'+esc(PROMPT)+'</div></div>';msgs.appendChild(uRow);ta.value='';sb();await wait(450);const sRow=document.createElement('div');sRow.className='msg-row';sRow.innerHTML='<div class="msg-body" style="padding-left:0"><div class="status-pill"><div class="spin"></div><span>Analysiere...</span></div></div>';msgs.appendChild(sRow);sb();await wait(1500);sRow.remove();const aiRow=document.createElement('div');aiRow.className='msg-row';aiRow.innerHTML='<div class="msg-head"><div class="av ai">AI</div><span class="msg-name">SynthCore</span><span class="msg-time">'+time()+'</span></div><div class="msg-body"><div class="ai-t" id="ait"></div></div>';msgs.appendChild(aiRow);await type(aiRow.querySelector('#ait'),'Discord Bot mit Slash Commands wird generiert...',10);await wait(900);const codeBox=document.createElement('div');codeBox.className='code-box';codeBox.innerHTML='<div class="code-top"><span class="code-lang">python</span><span class="code-file">bot.py</span><span class="add">+12</span></div><pre class="pre">'+esc(CODE)+'</pre>';aiRow.querySelector('.msg-body').appendChild(codeBox);sb();await wait(600);document.getElementById('term').classList.add('open');await wait(700);typeLog(TERM)}document.addEventListener('DOMContentLoaded',()=>{run()})<\/script></body></html>`;
-
-// ── Favicon always 1.png (also on tab leave) ──
+// ── Favicon lock ─────────────────────────────
 (function() {
-  const favicon = document.querySelector("link[rel='icon']");
-  document.addEventListener('visibilitychange', () => {
-    if (favicon) favicon.href = '1.png';
-  });
+  const fav = document.querySelector("link[rel='icon']");
+  document.addEventListener('visibilitychange', () => { if (fav) fav.href = '1.png'; });
 })();
 
-// ── Init ───────────────────────────────────────
+// ── Simulation HTML ───────────────────────────
+const simHTML = `<!DOCTYPE html><html><head><meta charset="UTF-8"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,1,0" rel="stylesheet"><style>*{margin:0;padding:0;box-sizing:border-box}body{background:#080810;color:#e8e8ec;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:13px;overflow:hidden;height:100vh}.material-symbols-rounded{font-family:'Material Symbols Rounded';font-weight:normal;font-style:normal;line-height:1;display:inline-flex;vertical-align:middle;font-size:17px}#wrap{display:flex;height:100vh}#sidebar{width:240px;background:#0d0d18;border-right:1px solid #1e1e2e;display:flex;flex-direction:column;pointer-events:none}#sb-top{padding:14px;border-bottom:1px solid #1e1e2e;display:flex;align-items:center;gap:10px}.sb-logo{width:28px;height:28px;background:linear-gradient(135deg,#4f8ef7,#7c6af7);border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;box-shadow:0 4px 12px rgba(79,142,247,0.3)}.sb-name{font-size:14px;font-weight:700}.sb-sub{font-size:10px;color:#555;margin-top:1px}#new-btn{margin:10px;padding:9px 12px;background:#1a1a2e;border:1px solid #2a2a40;border-radius:8px;color:#666;cursor:not-allowed;display:flex;align-items:center;gap:7px;font-size:12px;opacity:.5}#sb-label{padding:10px 14px 5px;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#333;font-weight:600}#history{flex:1;padding:4px 8px}.h-item{padding:7px 10px;border-radius:6px;color:#3a3a44;font-size:12px;display:flex;align-items:center;gap:8px}#sb-foot{padding:10px;border-top:1px solid #1e1e2e}.sb-status{padding:7px 10px;display:flex;align-items:center;gap:7px;font-size:12px}.status-dot{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e}#main{flex:1;display:flex;flex-direction:column;overflow:hidden}#topbar{padding:10px 18px;border-bottom:1px solid #1e1e2e;display:flex;align-items:center;gap:10px;background:#080810}#model-chip{display:flex;align-items:center;gap:7px;padding:5px 12px;background:#1a1a2e;border:1px solid #2a2a40;border-radius:100px;font-size:12px;color:#666}#msgs{flex:1;overflow-y:auto;padding:18px}#welcome{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;text-align:center;gap:14px}.wl-icon{width:52px;height:52px;background:linear-gradient(135deg,#4f8ef7,#7c6af7);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;color:#fff;box-shadow:0 8px 24px rgba(79,142,247,0.35)}.wl-title{font-size:20px;font-weight:700;letter-spacing:-.3px}.wl-sub{font-size:13px;color:#555;max-width:360px;line-height:1.5}.msg-row{padding:16px 18px;border-bottom:1px solid #12121e;animation:fi .2s ease}@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}.msg-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}.av{width:28px;height:28px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;background:#1a1a2e;border:1px solid #2a2a40;flex-shrink:0}.av.ai{background:rgba(79,142,247,.12);border-color:rgba(79,142,247,.3);color:#7eb4ff}.msg-name{font-size:12px;font-weight:600;color:#555}.msg-time{font-size:10px;color:#333;margin-left:auto}.msg-body{padding-left:37px}.user-bubble{display:inline-block;background:#1a1a2e;border:1px solid #2a2a40;border-radius:9px;padding:7px 13px;font-size:13px}.ai-t{font-size:13px;color:#ccc;line-height:1.6}.status-pill{display:inline-flex;align-items:center;gap:9px;padding:7px 13px;background:#1a1a2e;border:1px solid #2a2a40;border-radius:12px;font-size:12px;color:#555}.spin{width:14px;height:14px;border:2px solid #2a2a40;border-top-color:#4f8ef7;border-radius:50%;animation:sp .7s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}.code-box{border:1px solid #2a2a40;border-radius:8px;margin:8px 0;overflow:hidden}.code-top{display:flex;align-items:center;justify-content:space-between;padding:7px 12px;background:#0d0d18;border-bottom:1px solid #2a2a40}.code-lang{font-size:10px;color:#444;text-transform:uppercase;letter-spacing:.5px}.code-file{font-family:monospace;font-size:11px;color:#555}.add{color:#22c55e;font-size:11px;font-weight:700}.pre{padding:14px;font-family:monospace;font-size:11px;line-height:1.5;color:#7ec8f5;background:#080810;overflow-x:auto}.term{position:fixed;right:0;top:0;width:380px;height:100vh;background:#060610;border-left:1px solid #1e1e2e;z-index:10;transform:translateX(100%);transition:transform .3s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column}.term.open{transform:translateX(0)}.term-hdr{padding:10px 14px;background:#0d0d18;border-bottom:1px solid #1e1e2e;display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600}.term-body{flex:1;overflow-y:auto;padding:14px;font-family:monospace;font-size:11px;line-height:1.6;color:#444}#input-area{padding:12px 16px;border-top:1px solid #1e1e2e;background:#080810}#input-box{background:#0d0d18;border:1px solid #2a2a40;border-radius:9px;overflow:hidden;opacity:.6}#ta{width:100%;background:transparent;border:none;outline:none;resize:none;padding:9px 13px;font-size:12px;color:#888;line-height:1.5;min-height:38px;cursor:not-allowed;font-family:inherit}#ta::placeholder{color:#333}#input-bar{display:flex;justify-content:flex-end;padding:5px 10px 9px}#send-btn{width:26px;height:26px;border-radius:7px;background:linear-gradient(135deg,#4f8ef7,#7c6af7);border:none;display:flex;align-items:center;justify-content:center;opacity:.5}</style></head><body><div id="wrap"><nav id="sidebar"><div id="sb-top"><div class="sb-logo">SC</div><div><div class="sb-name">SynthCore</div><div class="sb-sub">Project Builder</div></div></div><button id="new-btn" disabled><span class="material-symbols-rounded">add</span>New Project</button><div id="sb-label">History</div><div id="history"><div class="h-item"><span class="material-symbols-rounded">chat</span>Demo Project</div></div><div id="sb-foot"><div class="sb-status"><div class="status-dot"></div><span style="color:#22c55e;font-size:12px;">Ready</span></div></div></nav><main id="main"><div id="topbar"><div id="model-chip"><span class="material-symbols-rounded">smart_toy</span>SynthCore 3.5</div></div><div id="msgs"><div id="welcome"><div class="wl-icon">SC</div><div class="wl-title">SynthCore Ultimate</div><div class="wl-sub">Beschreibe dein Projekt und lass die KI den Rest erledigen.</div></div></div><div id="input-area"><div id="input-box"><textarea id="ta" placeholder="What should I build?" rows="1"></textarea><div id="input-bar"><button id="send-btn" disabled><span class="material-symbols-rounded">send</span></button></div></div></div></main><div class="term" id="term"><div class="term-hdr"><span class="material-symbols-rounded">terminal</span>Build Output</div><div class="term-body" id="term-body"></div></div></div><script>const PROMPT="Create a Python Discord bot with slash commands";const CODE="import discord\\nfrom discord import app_commands\\n\\nbot = discord.Bot()\\n\\n@bot.tree.command(name='ping')\\nasync def ping(interaction):\\n    await interaction\\n        .response\\n        .send_message('Pong!')\\n\\nbot.run('TOKEN')";const TERM="Starting build pipeline...\\nAnalyzing project structure\\nInstalling discord.py...\\n✓ discord.py installed\\nCompiling source files\\n✓ bot.py generated\\nRunning tests... ✓\\nBuild successful — 11.2s";function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}function time(){return new Date().toLocaleTimeString()}function sb(){const m=document.getElementById('msgs');if(m)m.scrollTo({top:m.scrollHeight})}function hide(id){const e=document.getElementById(id);if(e)e.style.display='none'}function wait(n){return new Promise(r=>setTimeout(r,n))}async function type(el,text,spd=12){el.innerHTML='';for(let i=0;i<text.length;i++){el.innerHTML=esc(text.slice(0,i+1))+'<span style="display:inline-block;width:1.5px;height:1em;background:#4f8ef7;margin-left:1px;vertical-align:text-bottom;border-radius:1px"></span>';if(i%10===0)sb();await wait(spd)}el.innerHTML=esc(text)}async function typeLog(text){const b=document.getElementById('term-body');for(const line of text.split('\\n')){const color=line.startsWith('✓')?'#22c55e':line.includes('...')?'#4f8ef7':'#555';b.innerHTML+='<span style="color:#333">['+time()+']</span> <span style="color:'+color+'">'+esc(line)+'</span>\\n';b.scrollTop=b.scrollHeight;await wait(35+Math.random()*25)}}async function run(){await wait(1400);const ta=document.getElementById('ta');for(let i=0;i<PROMPT.length;i++){ta.value=PROMPT.slice(0,i+1);await wait(36)}await wait(300);hide('welcome');const msgs=document.getElementById('msgs');const uRow=document.createElement('div');uRow.className='msg-row';uRow.innerHTML='<div class="msg-head"><div class="av">Du</div><span class="msg-name">Du</span><span class="msg-time">'+time()+'</span></div><div class="msg-body"><div class="user-bubble">'+esc(PROMPT)+'</div></div>';msgs.appendChild(uRow);ta.value='';sb();await wait(400);const sRow=document.createElement('div');sRow.className='msg-row';sRow.innerHTML='<div class="msg-body" style="padding-left:0"><div class="status-pill"><div class="spin"></div><span>Analysiere Anfrage...</span></div></div>';msgs.appendChild(sRow);sb();await wait(1400);sRow.remove();const aiRow=document.createElement('div');aiRow.className='msg-row';aiRow.innerHTML='<div class="msg-head"><div class="av ai">AI</div><span class="msg-name">SynthCore</span><span class="msg-time">'+time()+'</span></div><div class="msg-body"><div class="ai-t" id="ait"></div></div>';msgs.appendChild(aiRow);await type(aiRow.querySelector('#ait'),'Discord Bot mit Slash Commands wird generiert...',10);await wait(800);const codeBox=document.createElement('div');codeBox.className='code-box';codeBox.innerHTML='<div class="code-top"><span class="code-lang">python</span><span class="code-file">bot.py</span><span class="add">+12 lines</span></div><pre class="pre">'+esc(CODE)+'</pre>';aiRow.querySelector('.msg-body').appendChild(codeBox);sb();await wait(500);document.getElementById('term').classList.add('open');await wait(600);typeLog(TERM)}document.addEventListener('DOMContentLoaded',()=>{run()})<\/script></body></html>`;
+
+// ── Init ─────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   buildMarquee();
   buildArchive();
+  initReveal();
+  animateStats();
   document.getElementById('simFrame').srcdoc = simHTML;
 });
 </script>
